@@ -41,6 +41,9 @@ git checkout -b jerry-contact
 <h1>Welcome to AI Sample Company</h1>
 <p>Contact: info@aisamplecompany.com</p>
 ```
+
+---
+
 ## 3. Commit Changes
 ```bash
 git commit -am "Added contact section"
@@ -57,16 +60,48 @@ git merge Abraham-contact   # Merge Abraham's changes (resolve conflicts if any)
 git log --graph --oneline  # Visualize branch merges
 ```
 
+---
+
 ### 5. Key Features Demonstrated
 
+| Git Feature            | Benefit                             | Example Command                          |
+|------------------------|-------------------------------------|------------------------------------------|
+|                                                                                                         |
+| `Branching`            | Parallel work without conflicts.    | git checkout -b feature-branch           |
+|                                                                                                         |
+| `Commiting`            | Tracked changes with audit trail.   | git commit -m "Descriptive note"         |
+|                                                                                                         |
+| `Merging`              | Safe integration of changes.        | git merge feature-branch                 |
+|                                                                                                         |
+| `Conflict Resolution`  | Manual override when edits overlap. | Edit files marked by Git, then commit    |
+|                                                                                                         |
 
+---
 
+### Key Takeaways
 
+Git eliminates manual file duplication
+* Single source of truth (index.html).
+* No more _v1, _v2 suffixes.
 
+Full change history:
+* See who change what and when with git log.
 
+Conflict Prevention
+* Branches isolate work until ready to merge
 
+---
 
+### Files & Resources
 
+Final Mergeed File
+* [index.html](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Git_Versioning/index.html)
+
+---
+
+### License
+
+This project is part of a DevOps training exercise. All rights reserved by Abraham Aigbokhan
 
 
 
