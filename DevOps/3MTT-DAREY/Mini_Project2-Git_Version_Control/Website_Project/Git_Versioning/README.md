@@ -98,8 +98,8 @@ Final Mergeed File
 * [index.html](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Git_Versioning/index.html)
 
 Screenshot of Log
-* [Mini-project2 Git Log.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Mini-Project2%20Git%20Log.png)
-* [Mini-Project2 Git Log_Online.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Mini-Project2%20Git%20Log_Online.png)
+* ![Mini-project2 Git Log.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Mini-Project2%20Git%20Log.png)
+* ![Mini-Project2 Git Log_Online.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Mini-Project2%20Git%20Log_Online.png)
 
 ---
 
