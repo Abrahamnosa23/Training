@@ -100,6 +100,22 @@ Final Mergeed File
 Screenshot of Log
 * ![Mini-project2 Git Log.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Mini-Project2%20Git%20Log.png)
 * ![Mini-Project2 Git Log_Online.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Mini-Project2%20Git%20Log_Online.png)
+* ![Screenshot 2025-04-13 121058.png]([https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Mini-Project2%20Git%20Log_Online.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20121058.png))
+* ![Screenshot 2025-04-13 121457.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20121457.png)
+* ![Screenshot 2025-04-13 121637.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20121637.png)
+* ![Screenshot 2025-04-13 121914.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20121914.png)
+* ![Screenshot 2025-04-13 121937.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20121937.png)
+* ![Screenshot 2025-04-13 122133.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20122133.png)
+* [Screenshot 2025-04-13 123247.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20123247.png)
+* ![Screenshot 2025-04-13 123539.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20123539.png)
+* ![Screenshot 2025-04-13 123946.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20123946.png)
+* ![Screenshot 2025-04-13 124016.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20124016.png)
+* ![Screenshot 2025-04-13 130853.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20130853.png)
+* ![Screenshot 2025-04-13 131426.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20131426.png)
+* ![Screenshot 2025-04-13 132032.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20132032.png)
+* ![Screenshot 2025-04-13 132307.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20132307.png)
+* ![Screenshot 2025-04-13 132417.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20132417.png)
+* ![Screenshot 2025-04-13 132926.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini_Project2-Git_Version_Control/Website_Project/Screenshot/Screenshot%202025-04-13%20132926.png)
 
 ---
 
