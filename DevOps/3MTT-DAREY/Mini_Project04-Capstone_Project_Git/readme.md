@@ -130,8 +130,8 @@ Screenshot
 ---
 
 ## Screenshots
-  All screenshot can be found in the /screenshots directory.
-  [Screenshot](https://github.com/Abrahamnosa23/Training/tree/add-character-section/DevOps/3MTT-DAREY/Mini_Project04-Capstone_Project_Git/Screenshot)
+ - All screenshot can be found in the /screenshots directory.
+ - [Screenshot](https://github.com/Abrahamnosa23/Training/tree/add-character-section/DevOps/3MTT-DAREY/Mini_Project04-Capstone_Project_Git/Screenshot)
   
 ---
 
