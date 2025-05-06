@@ -109,20 +109,31 @@ Screenshot
 
 Screenshot
 
+---
+
 ## Project Outcome
   * Demonstrated Git workflows (branching, merging, resolving conflicts)
   * Built a creative and interactive web story
   * Practiced real-world collaboration structure
   * Strengthened storytelling through code
 
+---
+
 ## To Run the Project
   Open index.html in any web browser
+
+---
 
 ## Contributors
   Abraham Aigbokhan - Corporate Student, Darey.io
 
+---
+
 ## Screenshots
   All screenshot can be found in the /screenshots directory.
+  (Screenshot)[https://github.com/Abrahamnosa23/Training/tree/add-character-section/DevOps/3MTT-DAREY/Mini_Project04-Capstone_Project_Git/Screenshot]
+  
+---
 
 ## License
   MIT
