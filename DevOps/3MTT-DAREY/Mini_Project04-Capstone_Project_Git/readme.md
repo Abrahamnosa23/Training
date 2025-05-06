@@ -40,7 +40,7 @@ cd interactive-web-story
 git init
 ```
 
-[! 1. Screenshot 2025-05-05 195934.png](https://github.com/Abrahamnosa23/Training/blob/add-character-section/DevOps/3MTT-DAREY/Mini_Project04-Capstone_Project_Git/Screenshot/1.%20Screenshot%202025-05-05%20195934.png)
+![1. Screenshot 2025-05-05 195934.png](https://github.com/Abrahamnosa23/Training/blob/add-character-section/DevOps/3MTT-DAREY/Mini_Project04-Capstone_Project_Git/Screenshot/1.%20Screenshot%202025-05-05%20195934.png)
 
 ### 2. Create HTML and CSS Files
 
@@ -131,7 +131,7 @@ Screenshot
 
 ## Screenshots
   All screenshot can be found in the /screenshots directory.
-  (Screenshot)[https://github.com/Abrahamnosa23/Training/tree/add-character-section/DevOps/3MTT-DAREY/Mini_Project04-Capstone_Project_Git/Screenshot]
+  [Screenshot](https://github.com/Abrahamnosa23/Training/tree/add-character-section/DevOps/3MTT-DAREY/Mini_Project04-Capstone_Project_Git/Screenshot)
   
 ---
 
