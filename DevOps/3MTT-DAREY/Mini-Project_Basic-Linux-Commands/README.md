@@ -42,22 +42,6 @@ linux-command-line/
 
 ![8. Screenshot 2025-05-15 205129.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/8.%20Screenshot%202025-05-15%20205129.png)
 
-![9. Screenshot 2025-05-15 205213.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/9.%20Screenshot%202025-05-15%20205213.png)
-
-![10. Screenshot 2025-05-15 210443.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/10.%20Screenshot%202025-05-15%20210443.png)
-
-![11. Screenshot 2025-05-15 210511.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/11.%20Screenshot%202025-05-15%20210511.png)
-
-![12. Screenshot 2025-05-15 210659.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/12.%20Screenshot%202025-05-15%20210659.png)
-
-![13. Screenshot 2025-05-15 210852.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/13.%20Screenshot%202025-05-15%20210852.png)
-
-![14. Screenshot 2025-05-15 211022.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/14.%20Screenshot%202025-05-15%20211022.png)
-
-![15. Screenshot 2025-05-15 211139.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/15.%20Screenshot%202025-05-15%20211139.png)
-
-![16. Screenshot 2025-05-15 211211.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/16.%20Screenshot%202025-05-15%20211211.png)
-
 
 ## 📁 File Operations
  ```bash
@@ -77,8 +61,17 @@ linux-command-line/
       rm filename.txt
 ```
 
+![9. Screenshot 2025-05-15 205213.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/9.%20Screenshot%202025-05-15%20205213.png)
 
+![10. Screenshot 2025-05-15 210443.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/10.%20Screenshot%202025-05-15%20210443.png)
 
+![11. Screenshot 2025-05-15 210511.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/11.%20Screenshot%202025-05-15%20210511.png)
+
+![12. Screenshot 2025-05-15 210659.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/12.%20Screenshot%202025-05-15%20210659.png)
+
+![13. Screenshot 2025-05-15 210852.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/13.%20Screenshot%202025-05-15%20210852.png)
+
+![14. Screenshot 2025-05-15 211022.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/14.%20Screenshot%202025-05-15%20211022.png)
 
 ## ⚠️ Dangerous Commands (Use with Care)
   ```bash
@@ -88,6 +81,9 @@ linux-command-line/
       # Sudo operations (verify before running)
       sudo rm important_file
   ```
+![15. Screenshot 2025-05-15 211139.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/15.%20Screenshot%202025-05-15%20211139.png)
+
+![16. Screenshot 2025-05-15 211211.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/16.%20Screenshot%202025-05-15%20211211.png)
 
 ## 🛠️ Step-by-Step Tutorials
 
