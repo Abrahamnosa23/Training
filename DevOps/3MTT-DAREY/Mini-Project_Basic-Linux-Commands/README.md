@@ -2,89 +2,128 @@
 
 This project provides a comprehensive guide to Linux file system navigation, essential commands, and system administration tasks. Learn how to safely manipulate files and directories, use powerful system commands, and understand Linux permissions.
 
+
+## 📌 Project Requirements Checklist
+
+My submission covers:
+
+1. Linux Command Syntax (Detailed breakdown of command -options parameters)
+2. Filesystem Navigation (pwd, ls, cd, exploring /usr, /root)
+3. File/Directory Manipulation (touch, cp, mv, rm, sudo mkdir)
+4. Side Hustle Task 1 (Creating directories in /usr, documenting steps)
+5. Real-World Examples (Practical use cases for each command)
+
+
+## ✅ Grading Criteria Addressed  
+| Requirement           | Covered?| Proof                                             |  
+|-----------------------|---------|---------------------------------------------------|  
+| Command Syntax        | ✅      |  [Section 1](#1-command-syntax-breakdown)        |  
+| Filesystem Navigation | ✅      | [Section 2](#2-navigating-the-linux-filesystem)  |  
+| File/Dir Manipulation | ✅      | [Section 3](#3-file--directory-manipulation)     |  
+| Side Hustle Task 1    | ✅      | [Section 4](#4-side-hustle-task-1)               |  
+
+
 ## 📂 Project Structure
-linux-command-line/
-├── README.md               # This guide
-└── screenshots/            # Terminal outputs and examples
+Basic-linux-commands-project/  
+├── README.md                # Updated guide (see template below)  
+├── screenshots/             # Terminal outputs for all tasks  
+│   ├── side-hustle-task1/   # Proof of completing Task 1  
+│   └── command-examples/    # `ls -la`, `sudo mkdir`, etc.  
+└── troubleshooting.md       # Documented issues & fixes 
 
 
-# 🚀 Core Commands & Concepts
-
-## 🔍 Navigation & File System
-  ```bash
-  # Change directory
-  cd /path/to/directory
-  # List directory contents (detailed)
-  ls -la
-  # Show current directory path
-  pwd
-  # Create directory (with sudo if needed)
-  mkdir new_directory
-  sudo mkdir /system/directory
-  ```
-
-## 📁 File Operations
- ```bash
- # Create empty file
- touch filename.txt
-      
- # View file contents
- cat filename.txt
-      
- # Copy files
- cp source.txt destination/
-      
- # Move/rename files
- mv oldname.txt newname.txt
-      
- # Delete files (CAUTION)
- rm filename.txt
+### 1. Command Syntax Breakdown  
+#### General Structure 
+```bash
+# command -options parameters
+* ls -la /home
+  * ls: Command (list files)
+  * -l: Option (long format)
+  * -a: Option (show hidden files)
+  * /home: Parameter (target directory)
 ```
 
-## ⚠️ Dangerous Commands (Use with Care)
-  ```bash
-      # Recursive delete (EXTREME CAUTION)
-      rm -rf directory/
-      
-      # Sudo operations (verify before running)
-      sudo rm important_file
-  ```
-
-## 🛠️ Step-by-Step Tutorials
-
-### 1. Creating and Managing Directories
-  ```bash
-      # Create nested directory structure
-      mkdir -p ~/projects/linux/new_project
-      
-      # Verify creation
-      ls -R ~/projects
-      
-      # Remove empty directory
-      rmdir ~/projects/linux/new_project
-  ```
 ![1. Screenshot 2025-05-15 204032.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/1.%20Screenshot%202025-05-15%20204032.png)
 
 ![2. Screenshot 2025-05-15 204141.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/2.%20Screenshot%202025-05-15%20204141.png)
 
+#### Key Commands
+
+|Command	|Syntax	|Example|
+|-----------|------------|------------|
+|ls	        |ls -[options] [dir]	|ls -la /usr|
+|sudo       |sudo [command]	      |sudo mkdir /usr/photos|
+|find       |find [path] -name "[file]"	  |find /home -name "*.txt"|
+
+
+### 2. Navigating the Linux Filesystem
+
+#### Task: Explore /usr and /root
+
+1. List contents of /usr:
+```bash
+ls -l /usr  # Shows binaries, libraries, etc.
+```
+
+2. Navigate to /root (requires sudo)
+```bash
+sudo ls -l /root  # Superuser home directory
+```
+
 ![3. Screenshot 2025-05-15 204336.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/3.%20Screenshot%202025-05-15%20204336.png)
+
+### 3. File & Directory Manipulation
+
+1. Create a Directory with sudo
+
+```bash
+sudo mkdir /usr/photos  # Requires admin rights
+```
+
+2. Copy/Move Files
+
+```bash
+cp file.txt /backup/      # Copy  
+mv file.txt renamed.txt   # Rename
+```
+
+3. Delete Files (Caution!)
+
+```bash
+rm old_file.txt           # Single file  
+rm -r /tmp/trash/        # Recursive delete (dangerous!)
+```
 
 ![4. Screenshot 2025-05-15 204513.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/4.%20Screenshot%202025-05-15%20204513.png)
 
+### 4. Side Hustle Task 1
+
+#### Objective
+Create /usr/pinker, subdirectories, and document steps.
+
+#### Steps
+
+1. Create photo in /usr:
+
+```bash
+sudo mkdir /usr/photo
+```
+
+2. Navigate and create subdirs:
+
+```bash
+cd /usr/photo  
+mkdir myphoto1 myphoto2 myphoto3    # Create multiple dirs
+```
+
+3. Verify and show path:
+
+```bash
+ls                      # List contents  
+pwd                     # Show full path (e.g., `/usr/pinker`)
+```
+
 ![5. Screenshot 2025-05-15 204740.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/5.%20Screenshot%202025-05-15%20204740.png)
-
-
-### 2. File Manipulation Workflow
-  ```bash
-      # Create test files
-      touch file{1..3}.txt
-      
-      # Copy with confirmation
-      cp -i file1.txt backup/
-      
-      # Bulk rename/move
-      mv *.txt text_files/
-  ```
 
 ![6. Screenshot 2025-05-15 204752.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/6.%20Screenshot%202025-05-15%20204752.png)
 
@@ -104,33 +143,34 @@ linux-command-line/
 
 ![14. Screenshot 2025-05-15 211022.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/14.%20Screenshot%202025-05-15%20211022.png)
 
-### 3. Using Sudo Safely
-  ```bash
-      # Create system directory (requires sudo)
-      sudo mkdir /opt/myapp
-      
-      # Change ownership
-      sudo chown $USER:$USER /opt/myapp
-      
-      # Verify permissions
-      ls -ld /opt/myapp
-  ```
-
 ![15. Screenshot 2025-05-15 211139.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/15.%20Screenshot%202025-05-15%20211139.png)
 
 ![16. Screenshot 2025-05-15 211211.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/Mini-Project_Basic-Linux-Commands/Screenshots/16.%20Screenshot%202025-05-15%20211211.png)
 
-## 📊 Command Reference Table
 
-  | Command	        | Description	                |Safety Level      |
-  |-----------------|-----------------------------|------------------|
-  | ls	            | List directory contents	    | Safe             |
-  | cp	            | Copy files/directories      | Safe             |
-  | mv	            | Move/rename files	          | Caution          |
-  | rm              | Delete files                |	Dangerous        |              
-  | sudo	          | Execute as superuser	      | Extreme Caution  |
-  | chmod	          | Change permissions	        | Caution          |
+### 5. Troubleshooting & Best Practices
 
+#### Common Issues
+- Permission Denied? Use sudo for system directories.
+- Accidental Deletion? Avoid rm -rf / (destructive!).
+
+#### Safety Tips
+- Always double-check paths before deleting.
+- Use -i with rm for confirmation:
+
+```bash
+rm -i file.txt  # Prompts before deleting
+```
+
+
+## 📌 Submission Checklist
+
+### Before submitting:
+
+1. Replace placeholder screenshots with actual terminal outputs.
+2. Verify Side Hustle Task 1 is fully documented.
+3. Add a "Lessons Learned" section reflecting on challenges.
+   
 
 ## 🛡️ Security Best Practices
 
