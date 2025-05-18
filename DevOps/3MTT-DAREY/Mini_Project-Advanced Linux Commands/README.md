@@ -11,15 +11,6 @@ This project demonstrates comprehensive Linux system administration skills inclu
 - Sudo privilege assignment
 
 
-## Completed Requirements Checklist
-| Requirement | Status | Proof |
-|-------------|--------|-------|
-| User Creation | ✅ | [Section 2.1](#2-user-management-tasks) |
-| Group Management | ✅ | [Section 3](#3-group-management-tasks) |
-| File Permissions | ✅ | [Section 4](#4-file-permission-tasks) |
-| Side Hustle Task 3 | ✅ | [Section 5](#5-side-hustle-task-3-completion) |
-
-
 ## Detailed Implementation Guide
 
 1. User Management
@@ -161,9 +152,9 @@ done
 ```
 
 ## Author
-Name: Abraham Aigbokhan
-Email: abraham.aigbokhan@outlook.com
-Linkedin: [LinkedIn](https://www.linkedin.com/in/abraham-aigbokhan-3abb28214)
+- Name: Abraham Aigbokhan
+- Email: abraham.aigbokhan@outlook.com
+- Linkedin: [LinkedIn](https://www.linkedin.com/in/abraham-aigbokhan-3abb28214)
 
 
 
