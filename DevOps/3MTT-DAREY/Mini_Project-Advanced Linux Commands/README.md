@@ -5,28 +5,28 @@ This project focuses on mastering Linux user and group management, file permissi
 ## Project Overview
 
 This project demonstrates comprehensive Linux system administration skills including:
+- File/directory permission controls
 - User account management
 - Group permissions configuration
-- File/directory permission controls
 - Sudo privilege assignment
 
 
 ## Detailed Implementation Guide
 
-1. User Management
+1. File Permissions
+- Understand numeric/symbolic permission representations
+- Modify permissions with chmod
+- Change ownership with chown
+
+2. User Management
 - Create/modify/delete user accounts
 - Set/change passwords
 - Grant sudo privileges
 
-2. Group Management
+3. Group Management
 - Create/modify/delete groups
 - Add/remove users from groups
 - Verify group memberships
-
-3. File Permissions
-- Understand numeric/symbolic permission representations
-- Modify permissions with chmod
-- Change ownership with chown
 
 4. Special Tasks
 - Side Hustle Task 3 (Create 5 users in devops group)
@@ -34,16 +34,42 @@ This project demonstrates comprehensive Linux system administration skills inclu
 
 ## Step-by-Step Implementation Guide
 
-1. Initial Setup
-```bash
-# Connect to your Linux server
-ssh -i "your-key.pem" username@server-ip
+### 1. File Permission Tasks
 
-# Create project directory
-mkdir user-management && cd user-management
+Task 1: Create User Directories
+```bash
+sudo mkdir /c/abrahamnosa23/Training/DevOps/3MTT-DAREY/Mini_Project-Advanced Linux Commands
+```
+```bash
+touch script.sh
+```
+```bash
+ls -latr script.sh
 ```
 
-2. User Management Tasks
+Task 2: Set Permissions
+```bash
+ chmod +x script.sh
+```
+```bash
+ls -latr script.sh
+```
+```bash
+chmod 755 script.sh
+```
+```bash
+ls -latr note.txt
+```
+
+Task 3: Permission Testing
+```bash
+# Create test file
+sudo touch /home/mary/test.txt
+
+# Set permissions (rw-rw-r--)
+sudo chmod 664 /home/mary/test.txt
+```
+### 2. User Management Tasks
 
 Task 1: Create Users
 ```bash
@@ -69,7 +95,7 @@ Task 3: Delete Users
 sudo userdel -r tunji  # -r removes home directory
 ```
 
-3. Group Management Tasks
+### 3. Group Management Tasks
 
 Task 1: Create Groups
 ```bash
@@ -91,34 +117,7 @@ id mary  # Check groups for mary
 groups ravi  # Alternative check
 ```
 
-4. File Permission Tasks
-
-Task 1: Create User Directories
-```bash
-sudo mkdir /home/mary /home/mohammed /home/ravi /home/sofia
-```
-
-Task 2: Set Permissions
-```bash
-# Change group ownership
-sudo chown :devops /home/mary
-sudo chown :devops /home/mohammed
-
-# Set permissions (rwx for group)
-sudo chmod 775 /home/mary
-sudo chmod g+rwx /home/mohammed
-```
-
-Task 3: Permission Testing
-```bash
-# Create test file
-sudo touch /home/mary/test.txt
-
-# Set permissions (rw-rw-r--)
-sudo chmod 664 /home/mary/test.txt
-```
-
-5. Side Hustle Task 3 Completion
+### 4. Side Hustle Task 3 Completion
 ```bash
 # Create devops group and users
 sudo groupadd devops
