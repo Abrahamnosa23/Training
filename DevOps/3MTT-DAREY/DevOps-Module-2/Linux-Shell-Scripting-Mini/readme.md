@@ -22,7 +22,7 @@ This project demonstrates the fundamentals of Linux shell scripting by automatin
 ```bash
 mkdir shell-scripting && cd shell-scripting
 ```
-
+!
 - Create the Shell Script
 Using vim (or nano), create a file:
 
