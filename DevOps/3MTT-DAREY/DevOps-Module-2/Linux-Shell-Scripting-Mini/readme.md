@@ -22,13 +22,17 @@ This project demonstrates the fundamentals of Linux shell scripting by automatin
 ```bash
 mkdir shell-scripting && cd shell-scripting
 ```
-!
+![Screenshot 2025-06-19 215703](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/Screenshot%202025-06-19%20215703.png)
+![Screenshot 2025-06-19 215727](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/Screenshot%202025-06-19%20215727.png)
+![Screenshot 2025-06-19 215902](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/Screenshot%202025-06-19%20215902.png)
 - Create the Shell Script
 Using vim (or nano), create a file:
 
 ```bash
 vim shell_script.sh
 ```
+
+![{DE782623-73E6-4222-9920-F2267640A419}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7BDE782623-73E6-4222-9920-F2267640A419%7D.png)
 
 - Insert the Script Code
 
@@ -48,6 +52,9 @@ sudo useradd user3
 ## Print confirmation
 echo "Directories and users created successfully!"
 ```
+![{043BFC48-20B3-4331-99C4-1CB9BD523EE3}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7B043BFC48-20B3-4331-99C4-1CB9BD523EE3%7D.png)
+![{598D656C-6197-4EA1-AC70-BC703CCBECF9}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7B598D656C-6197-4EA1-AC70-BC703CCBECF9%7D.png)
+![{D8F651D1-7F95-4BB7-AAAF-0E82101750BF}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7BD8F651D1-7F95-4BB7-AAAF-0E82101750BF%7D.png)
 
 Save and exit (:wq in vim).
 
@@ -56,19 +63,27 @@ Save and exit (:wq in vim).
 ```bash
 ls -lstr
 ```
+
+![{07B59E6B-8ACA-4D5F-B5B7-453DF3E4DA0A}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7B07B59E6B-8ACA-4D5F-B5B7-453DF3E4DA0A%7D.png)
+
 Expected output: -rw-r--r-- (no execute permission)
 
 - Make the Script Executable
 
 ```bash
-chmod u+x my_first_shell_script.sh
+chmod u+x shell_script.sh
 ```
+![{FE7A3F53-9CDD-4385-A646-7BEF5549C71A}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7BFE7A3F53-9CDD-4385-A646-7BEF5549C71A%7D.png)
+![{E26F839D-CAF4-4A88-A475-C700429905A4}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7BE26F839D-CAF4-4A88-A475-C700429905A4%7D.png)
+![{48CED7B4-3AE6-4EA6-A3FC-33EE49B7F845}](
+
+
 Verify with ls -lstr → Should now show -rwxr--r--
 
 - Execute the Script
 
 ```bash
-./my_first_shell_script.sh
+./shell_script.sh
 ```
 Enter sudo password if prompted.
 
