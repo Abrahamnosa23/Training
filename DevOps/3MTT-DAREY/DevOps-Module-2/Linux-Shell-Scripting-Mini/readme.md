@@ -90,6 +90,7 @@ Enter sudo password if prompted.
 - Verify Output
 Check folders:
 
+![{E26F839D-CAF4-4A88-A475-C700429905A4}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7BE26F839D-CAF4-4A88-A475-C700429905A4%7D.png)
 ```bash
 ls
 ```
@@ -103,6 +104,8 @@ id user3
 Expected output:
 
 uid=1001(user1) gid=1001(user1) groups=1001(user1)
+
+![{D518AD1F-03B7-4E0E-BFB5-D985CA2364F2}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7BD518AD1F-03B7-4E0E-BFB5-D985CA2364F2%7D.png)
 
 ## Advanced: Using Variables
 To make the script more dynamic, modify it to use variables:
@@ -126,20 +129,13 @@ sudo useradd ${username}_3
 echo "Created folders: $(ls | grep ${folder_prefix})"
 echo "Created users: $(id ${username}_1) $(id ${username}_2) $(id ${username}_3)"
 ```
+![{DC135E54-D4AC-43EE-B64C-F9BA41C51A92}](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Linux-Shell-Scripting-Mini/Screenshots/%7BDC135E54-D4AC-43EE-B64C-F9BA41C51A92%7D.png)
 
 ## Key Learnings
 - Shebang (#!/bin/bash) – Specifies the interpreter.
 - File Permissions (chmod) – Ensures script executability.
 - Basic Commands (mkdir, useradd) – Automates system tasks.
 - Variables (name="John") – Enhances script flexibility.
-
-## Cleanup (Optional)
-To remove created folders and users:
-
-```bash
-rm -r Folder1 Folder2 Folder3
-sudo userdel user1 user2 user3
-```
 
 ## Professional Best Practices
 - Use comments (#) to explain script logic.
