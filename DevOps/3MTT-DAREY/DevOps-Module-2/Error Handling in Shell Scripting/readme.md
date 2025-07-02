@@ -7,6 +7,20 @@ This project teaches error handling in shell scripting by creating AWS S3 bucket
 * Implementing conditional checks
 * Providing meaningful user feedback
 
+## Learning Objectives
+
+* Implement conditional error checks
+* Use AWS CLI in shell scripts
+* Prevent redundant resource creation
+* Follow POSIX-compliant scripting practices 
+
+## File Structure
+
+s3_bucket_creator/
+- ├── Screenshot # Contain Screenshot of the steps taken
+- ├── s3_bucket_creator.sh # Main script
+- └── README.md # Documentation
+
 ## Step-by-Step Implementation
 
 ### Prerequisites
@@ -69,3 +83,22 @@ chmod +x s3_bucket_creator.sh
 ```
 
 #### Run the Script
+
+```bash
+./s3_bucket_creator.sh
+```
+
+#### Expected Output
+
+```bash
+S3 bucket 'datamiss-Marketing-Data-Bucket' created successfully.
+S3 bucket 'datamiss-Sales-Data-Bucket' already exists. Skipping creation.
+...
+```
+
+#### Verification
+
+```bash
+aws s3 ls  # List all buckets to verify creation
+```
+
