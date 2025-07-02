@@ -102,3 +102,44 @@ S3 bucket 'datamiss-Sales-Data-Bucket' already exists. Skipping creation.
 aws s3 ls  # List all buckets to verify creation
 ```
 
+## Key Features
+
+### Duplicate Prevention
+
+```bash
+if aws s3api head-bucket --bucket "$bucket_name" &>/dev/null; then
+    echo "Bucket exists - skipping"
+fi
+```
+
+### Error Handling
+
+| Error Case         | Handling Method      |
+|:-------------------|:--------------------:|
+| Bucket exists	     | Skip creation        |
+| AWS API failure	 | Exit with status 1   |
+| Permission issues	 | STDERR messaging     |
+
+### Departmental Buckets
+
+#### Automatically creates buckets for:
+
+* Marketing
+* Sales
+* HR
+* Operations
+* Media
+
+### Testing
+
+```bash
+# First run (creates buckets)
+./s3_bucket_creator.sh
+
+# Second run (skips existing)
+./s3_bucket_creator.sh | grep "already exists"
+```
+
+## License
+
+MIT License - Free for commercial and educational use
