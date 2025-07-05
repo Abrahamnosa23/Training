@@ -18,7 +18,7 @@
 
 ## File Structure
 
-<pre> ```Working-With-Functions-&-Arrays-in-Shell-Scripting/
+<pre> Working-With-Functions-&-Arrays-in-Shell-Scripting/
 ├── Screenshot                      # Project documentation
 ├── README.md                       # Project documentation
 ├── aws_environment_setup.sh        # Main script
