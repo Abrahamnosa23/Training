@@ -34,6 +34,7 @@
         ├── test_invalid_env.sh     # Invalid environment tests
         ├── test_missing_arg.sh     # Missing argument tests
         └── test_no_aws_cli.sh      # Missing AWS CLI tests
+</pre>
 
 ## Key File Explanations:
 
