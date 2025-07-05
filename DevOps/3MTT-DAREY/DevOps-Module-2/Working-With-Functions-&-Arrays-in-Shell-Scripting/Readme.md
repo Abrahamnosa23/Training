@@ -262,6 +262,8 @@ chmod +x aws_environment_setup.sh
 - Integration Testing = End-to-end workflow verification
 
 ## CI/CD Integration Example
+
+- Yaml File
 ```yaml
 jobs:
   test:
