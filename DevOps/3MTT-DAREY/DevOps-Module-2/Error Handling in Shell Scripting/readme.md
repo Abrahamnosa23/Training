@@ -31,17 +31,25 @@ s3_bucket_creator/
 aws configure
 ```
 
+![Screenshot 2025-07-05 185405](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Screenshot%202025-07-05%20185405.png)
+
 #### Verify access:
 
 ```bash
 aws sts get-caller-identity
 ```
 
+![Screenshot 2025-07-05 185532](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Screenshot%202025-07-05%20185532.png)
+
 #### Create the Script File
 
 ```bash
 vim s3_bucket_creator.sh
 ```
+
+![Capture](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Capture.PNG)
+
+![Screenshot 2025-07-02 213225](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Screenshot%202025-07-02%20213225.png)
 
 #### Add the Script Content
 
@@ -86,6 +94,9 @@ create_s3_buckets() {
 # Execute the function
 create_s3_buckets
 ```
+[s3_bucket_creator.sh](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/s3_bucket_creator.sh)
+
+![Capture3](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Capture3.PNG)
 
 #### Make the Script Executable
 
@@ -93,11 +104,15 @@ create_s3_buckets
 chmod +x s3_bucket_creator.sh
 ```
 
+![Screenshot 2025-07-02 213245](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Screenshot%202025-07-02%20213245.png)
+
 #### Run the Script
 
 ```bash
 ./s3_bucket_creator.sh
 ```
+
+![Screenshot 2025-07-02 213947](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Screenshot%202025-07-02%20213947.png)
 
 #### Expected Output
 
@@ -107,11 +122,18 @@ S3 bucket 'datamiss-Sales-Data-Bucket' already exists. Skipping creation.
 ...
 ```
 
+![Screenshot 2025-07-05 181703](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Screenshot%202025-07-05%20181703.png)
+
+![Capture4](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Capture4.PNG)
+
+
 #### Verification
 
 ```bash
 aws s3 ls  # List all buckets to verify creation
 ```
+
+![Capture5](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Capture8.PNG)
 
 ## Key Features
 
@@ -122,6 +144,8 @@ if aws s3api head-bucket --bucket "$bucket_name" &>/dev/null; then
     echo "Bucket exists - skipping"
 fi
 ```
+
+![Screenshot 2025-07-05 185329](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Screenshot%202025-07-05%20185329.png)
 
 ### Error Handling
 
@@ -150,6 +174,8 @@ fi
 # Second run (skips existing)
 ./s3_bucket_creator.sh | grep "already exists"
 ```
+
+![Screenshot 2025-07-05 185329](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Error%20Handling%20in%20Shell%20Scripting/Screenshots/Screenshot%202025-07-05%20185329.png)
 
 ## License
 
