@@ -255,15 +255,14 @@ chmod +x aws_environment_setup.sh
 ```
 
 ## Key Testing Concepts Demonstrated
-- Positive Testing - Valid environment configurations
-- Negative Testing - Error condition validation
-- Exit Code Verification - Confirming proper error signaling
-- Output Validation - Checking stdout/stderr messages
-- Integration Testing - End-to-end workflow verification
+- Positive Testing = Valid environment configurations
+- Negative Testing = Error condition validation
+- Exit Code Verification = Confirming proper error signaling
+- Output Validation = Checking stdout/stderr messages
+- Integration Testing = End-to-end workflow verification
 
 ## CI/CD Integration Example
-yaml
-# Sample GitHub Actions workflow
+```yaml
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -272,7 +271,7 @@ jobs:
       - run: |
           sudo apt-get install -y awscli
           cd tests && ./run_all_tests.sh
-
+```
 ## Summary of your key learnings
 
 Through this project, you've mastered modular shell scripting by creating specialized functions to handle AWS environment configurations, including argument validation, AWS CLI verification, and profile       authentication. You learned to implement professional error handling with exit codes, use environment variables for AWS profile switching, and structure scripts with clear function boundaries for maintainability. The project demonstrated practical applications of conditional logic (case statements), command output checking (command -v), and defensive programming techniques. You also gained experience with AWS CLI configuration files, profile management, and best practices for writing production-ready shell scripts that validate all dependencies and inputs before execution, ensuring reliable infrastructure automation.
