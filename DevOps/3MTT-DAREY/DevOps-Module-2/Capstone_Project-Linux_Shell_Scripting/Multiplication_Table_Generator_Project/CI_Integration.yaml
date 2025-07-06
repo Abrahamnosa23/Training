@@ -1,9 +1,0 @@
-yaml
-# .github/workflows/tes.yml
-jobs:
-  test:
-    steps:
-      - uses: actions/checkout@v3
-      - run: |
-          ./multitable.sh <<< $'3\n1\nn' | grep "3 x 10 = 30"
-          ./multitable.sh <<< $'x\n3\n2\n4\n8\nn' | grep "Invalid range"
