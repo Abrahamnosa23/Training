@@ -314,6 +314,8 @@ chmod +x aws_environment_setup.sh
 ./aws_environment_setup.sh invalid
 ```
 
+![Screenshot 2025-07-06 213901](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20213901.png)
+
 ## Key Testing Concepts Demonstrated
 - Positive Testing = Valid environment configurations
 - Negative Testing = Error condition validation
