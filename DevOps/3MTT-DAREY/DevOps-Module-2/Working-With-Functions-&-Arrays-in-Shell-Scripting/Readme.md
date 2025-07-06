@@ -18,6 +18,16 @@
 
 ## File Structure
 
+[Screenshot](https://github.com/Abrahamnosa23/Training/tree/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot)
+
+[Readme.md](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Readme.md)
+
+[aws_environment_setup.sh](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/aws_environment_setup.sh)
+
+[.github/workflow](https://github.com/Abrahamnosa23/Training/tree/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/.github/workflows)
+
+[tests](https://github.com/Abrahamnosa23/Training/tree/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Tests)
+
 <pre> Working-With-Functions-&-Arrays-in-Shell-Scripting/
 ├── Screenshot                      # Project documentation
 ├── README.md                       # Project documentation
@@ -62,6 +72,7 @@
 ```bash
 vim aws_environment_setup.sh
 ```
+![Screenshot 2025-07-06 003207](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20003207.png)
 
 ### Add This Corrected & Improved Script
 ```bash
@@ -132,11 +143,29 @@ echo "SUCCESS: AWS environment '$1' configured properly"
 aws configure list
 ```
 
+![Screenshot 2025-07-06 004944](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20004944.png)
+
+![Screenshot 2025-07-06 005011](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20005011.png)
+
+![Screenshot 2025-07-06 005029](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20005029.png)
+
+![Screenshot 2025-07-06 190626](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20190626.png)
+
+![Screenshot 2025-07-06 191305](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20191305.png)
+
+
 
 ### Create Test Directory Structure
 ```bash
 mkdir -p tests/{positive,negative} && cd tests
 ```
+
+![Screenshot 2025-07-06 191526](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20191526.png)
+
+![Screenshot 2025-07-06 005412](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20005412.png)
+
+![Screenshot 2025-07-06 005426](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20005426.png)
+
 
 ### Positive Test Cases
 - tests/positive/test_local.sh
@@ -161,6 +190,12 @@ else
 fi
 ```
 
+![Screenshot 2025-07-06 191833](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20191833.png)
+
+![Screenshot 2025-07-06 200735](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20200735.png)
+
+![Screenshot 2025-07-06 014951](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20014951.png)
+
 - tests/positive/test_production.sh
 ```bash
 #!/bin/bash
@@ -183,6 +218,14 @@ else
 fi
 ```
 
+![Screenshot 2025-07-06 202001](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20202001.png)
+
+![Screenshot 2025-07-06 201940](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20201940.png)
+
+![Screenshot 2025-07-06 020744](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20020744.png)
+
+![Screenshot 2025-07-06 021512](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20021512.png)
+
 ### Negative Test Cases
 - tests/negative/test_invalid_env.sh
 ```bash
@@ -198,6 +241,10 @@ else
 fi
 ```
 
+![Screenshot 2025-07-06 204620](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20204620.png)
+
+![Screenshot 2025-07-06 204602](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20204602.png)
+
 - tests/negative/test_missing_arg.sh
 ```bash
 #!/bin/bash
@@ -211,6 +258,10 @@ else
     exit 1
 fi
 ```
+
+![Screenshot 2025-07-06 204642](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20204642.png)
+
+![Screenshot 2025-07-06 205131](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20205131.png)
 
 ### Test Runner Script
 - tests/run_all_tests.sh
@@ -232,6 +283,10 @@ done
 echo "All tests passed successfully"
 ```
 
+![Screenshot 2025-07-06 205609](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20205609.png)
+
+![Screenshot 2025-07-06 205555](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20205555.png)
+
 ## Test Suite
 
 ### Test Cases Overview
@@ -247,6 +302,10 @@ echo "All tests passed successfully"
 ```bash
 chmod +x aws_environment_setup.sh
 ```
+
+![Screenshot 2025-07-06 205652](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20205652.png)
+
+![Screenshot 2025-07-06 205705](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20205705.png)
 
 ### Run Test
 ```bash
@@ -275,6 +334,11 @@ jobs:
           sudo apt-get install -y awscli
           cd tests && ./run_all_tests.sh
 ```
+
+![Screenshot 2025-07-06 210243](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20210243.png)
+
+![Screenshot 2025-07-06 210319](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Working-With-Functions-%26-Arrays-in-Shell-Scripting/Screenshot/Screenshot%202025-07-06%20210319.png)
+
 ## Summary of your key learnings
 
 Through this project, you've mastered modular shell scripting by creating specialized functions to handle AWS environment configurations, including argument validation, AWS CLI verification, and profile       authentication. You learned to implement professional error handling with exit codes, use environment variables for AWS profile switching, and structure scripts with clear function boundaries for maintainability. The project demonstrated practical applications of conditional logic (case statements), command output checking (command -v), and defensive programming techniques. You also gained experience with AWS CLI configuration files, profile management, and best practices for writing production-ready shell scripts that validate all dependencies and inputs before execution, ensuring reliable infrastructure automation.
