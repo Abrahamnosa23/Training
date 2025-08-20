@@ -1,16 +1,16 @@
 # AWS Account Foundation
 
-## Project Overview & Goals
-This project documents the initial and critical phase of the MarketPeak E-Commerce Platform deployment: the creation and secure configuration of an Amazon Web Services (AWS) account. This foundational step is a mandatory prerequisite for all subsequent cloud infrastructure provisioning, including the EC2 instance that will host the application.
+## Project Overview
+TThis mini project is designed to walk you through the process of creating an Amazon Web Services (AWS) account, providing step-by-step guidance and insights into the intricacies of setting up your AWS account. Before delving into the specifics of account creation, its important to emphasize the fundamental principles of cloud computing, which serve as the foundation for this project. If you're new to the concept of cloud, its recommended to familiarize yourself with cloud computing basics to fully grasp the significance of AWS account creation.
 
 ## Project Duration: 2 hours
 
-### Learning Outcomes:
+### Project Goals and Learning Outcomes:
 
-- Understand the fundamental value proposition of cloud computing and AWS.
-- Successfully navigate the end-to-end AWS account creation and identity verification process.
-- Establish a secure foundation for future cloud operations by understanding root user best practices.
-- Gain initial familiarity with the AWS Management Console.
+- Understand the basics of AWS Cloud nd its importance for business and individuals
+- Successfully create an AWS account and navigate through the setup process
+- Learn how to access the AWS Management Console using newly created account credentials
+- Gain practical experience in using AWS services effectively for future projects or business needs 
 
 ## Table of Contents
 
@@ -55,11 +55,19 @@ Before beginning, ensure you have the following ready:
   - Choose a unique AWS account name (e.g., marketpeak-prod).
   - Click "Verify email address".
 
+-![aws1](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws1.png)
+
+-![aws2](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws2.png)
+
 ### Step 2: Root User Email Verification
 3. Check the inbox of the email address you provided.
 4. Locate the email from AWS with the subject "AWS Email Verification".
 5. Copy the verification code from the email.
 6. Return to the AWS sign-up page, paste the code into the field, and click "Verify".
+
+-![aws3](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws3.png)
+
+-![aws6](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws6.png)
 
 ### Step 3: Set Root User Credentials
 7. Upon successful verification, you will be prompted to set a Root user password.
@@ -72,12 +80,18 @@ Before beginning, ensure you have the following ready:
   - Select "Personal" account type.
   - Enter your full legal name, phone number, country, and full physical address accurately.
 
+-![aws4](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws4.png)
+
+-![aws5](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws5.png)
+
 10. Read and agree to the AWS Customer Agreement.
 11. Click "Continue".
 12. You will now be required to enter payment information.
   - Important: AWS uses this to verify your identity. You will not be charged unless your usage exceeds the Always Free tier limits. A temporary authorization hold (typically $1-$3 USD) may appear on your statement and will be reversed shortly thereafter.
 
 13. Enter your credit/debit card details and billing address. Click "Verify and Continue".
+
+-![aws7](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws7.png)
 
 ### Step 5: Identity Verification (SMS/Voice Call)
 14. To confirm your identity, AWS requires a second factor of verification.
@@ -88,10 +102,16 @@ Before beginning, ensure you have the following ready:
 19. You will receive a one-time password (OTP) on your mobile device within moments.
 20. Enter the OTP in the provided field on the AWS sign-up page and click "Continue".
 
+-![aws8](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws8.png)
+
+-![aws9](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws9.png)
+
 ### Step 6: Select a Support Plan
 21. AWS will prompt you to choose a support plan.
   - Basic plan - Free: Recommended for starting. Includes 24/7 customer service, access to AWS Personal Health Dashboard, and basic Trusted Advisor checks.
   - (Developer, Business, Enterprise plans are paid options with enhanced support).
+
+-[aws4](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws4.png)
 
 22. For this project, select the "Basic plan - Free" option.
 23. Click "Complete sign up".
@@ -103,6 +123,10 @@ Before beginning, ensure you have the following ready:
 27. Enter your root user password and click "Sign in".
 28. You may be presented with another CAPTCHA. Enter the code and click "Submit".
 29. Success! You will see the AWS Management Console dashboard. Your account is now active and ready.
+
+-![aws10](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws10.png)
+
+-![aws11](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Account_Creation/Screenshot/aws11.png)
 
 ## 5. Security Best Practices & Next Steps
 ### IMMEDIATE ACTIONS REQUIRED:
