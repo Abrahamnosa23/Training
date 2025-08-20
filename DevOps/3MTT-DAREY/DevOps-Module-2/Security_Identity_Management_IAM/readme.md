@@ -24,6 +24,8 @@ By completing this project, you will be able to:
 - A basic understanding of cloud computing and AWS core services (EC2, S3).
 - A mobile device with an authenticator app (e.g., Google Authenticator or Microsoft Authenticator).
 
+-![1. AWS-Account-Dashboard.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/1.%20AWS-Account-Dashboard.png)
+
 ## Core IAM Concepts: The Building Blocks
 
 Before beginning, it's crucial to understand the IAM components we will use:
@@ -40,6 +42,8 @@ Before beginning, it's crucial to understand the IAM components we will use:
 
 We start by defining the precise permissions needed for each role, rather than using broad, pre-existing policies.
 
+-![2. AWS-Policies.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/2.%20AWS-Policies.png)
+
 A. Policy for Backend Developers (developer-policy)
 
 Purpose: Grants full access to EC2 instances for deploying and managing application servers.
@@ -54,6 +58,14 @@ Purpose: Grants full access to EC2 instances for deploying and managing applicat
 5. Description: Allows full access to EC2 instances for backend development teams.
 6. Click Create policy.
 
+-![3. EC2-Policies.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/3.%20EC2-Policies.png)
+
+-![4. EC2-Policies1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/4.%20EC2-Policies1.png)
+
+-![5. EC2-Policies2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/5.%20EC2-Policies2.png)
+
+-![6. EC2-Policies-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/6.%20EC2-Policies-created.png)
+
 B. Policy for Data Analysts (analyst-policy)
 
 Purpose: Grants full access to S3 for managing data storage buckets, which is essential for data analysis tasks.
@@ -67,9 +79,17 @@ Purpose: Grants full access to S3 for managing data storage buckets, which is es
 4. Description: Allows full access to S3 buckets and objects for the data analysis team.
 5. Click Create policy.
 
+-![7. S3-Policies.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/7.%20S3-Policies.png)
+
+-![8. S3-Policies-Created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/8.%20S3-Policies-Created.png)
+
 Phase 2: Organizing Users into Groups
 
 Groups are the most efficient way to manage permissions for teams of users.
+
+-![9. user-group.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/9.%20user-group.png)
+
+-![10. User group created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/10.%20User%20group%20created.png)
 
 A. Group for Developers (Development-Team)
 
@@ -78,6 +98,8 @@ A. Group for Developers (Development-Team)
 3. Under Attach permissions policies, search for and select the custom developer-policy you created.
 4. Click Create group.
 
+-![11. development-group-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/11.%20development-group-created.png)
+
 B. Group for Analysts (Analyst-Team)
 
 1. Navigate to IAM Console > User Groups > Create group.
@@ -85,9 +107,17 @@ B. Group for Analysts (Analyst-Team)
 3. Under Attach permissions policies, search for and select the custom analyst-policy you created.
 4. Click Create group.
 
+-![12. analyst-group-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/12.%20analyst-group-created.png)
+
+-![13. group-list.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/13.%20group-list.png)
+
 Phase 3: Creating IAM Users and Assigning Them to Groups
 
 Now, create individual identities and assign them to the appropriate group.
+
+-![14. IAM-users.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/14.%20IAM-users.png)
+
+-![22. IAM-users-new.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/22.%20IAM-users-new.png)
 
 A. User for John (Backend Developer)
 
@@ -100,6 +130,12 @@ A. User for John (Backend Developer)
 7. Click Next, review the details, and click Create user.
 8. CRITICAL: Download the .csv file containing John's sign-in URL, username, and temporary password. This is the only time you can download these credentials.
 
+-![15. john-user-creation.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/15.%20john-user-creation.png)
+
+-![16. john-user-creation1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/16.%20john-user-creation1.png)
+
+-![17. john-user-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/17.%20john-user-created.png)
+
 B. User for Mary (Data Analyst)
 
 1. Repeat the steps above.
@@ -107,9 +143,19 @@ B. User for Mary (Data Analyst)
 3. On the Add user to group page, select the Analyst-Team group.
 4. Create the user and download her credentials.
 
+-![18. mary-user-creation.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/18.%20mary-user-creation.png)
+
+-![19. mary-user-creation1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/19.%20mary-user-creation1.png)
+
+-![20. mary-user-creation2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/20.%20mary-user-creation2.png)
+
+-![21. mary-user-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/21.%20mary-user-created.png)
+
 Phase 4: Enforcing Multi-Factor Authentication (MFA)
 
 MFA is essential for protecting against unauthorized access, even if a password is compromised.
+
+-![35. all-users.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/35.%20all-users.png)
 
 Setting Up MFA for John
 
@@ -128,7 +174,19 @@ Setting Up MFA for John
 8. Wait for the code to refresh (about 30 seconds), then enter the next code in the Authentication code 2 field.
 9. Click Add MFA.
 
+-![36. john-mfa.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/36.%20john-mfa.png)
+
+-![37. john-mfa1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/37.%20john-mfa1.png)
+
+-![38. john-mfa2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/38.%20john-mfa2.png)
+
 Repeat this entire process for the user mary.
+
+-![39. mary-mfa.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/39.%20mary-mfa.png)
+
+-![40. mary-mfa1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/40.%20mary-mfa1.png)
+
+-![41. mary-mfa2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/41.%20mary-mfa2.png)
 
 ## Validation and Testing Protocol
 
@@ -140,11 +198,35 @@ Testing John's Access (Backend Developer)
 2. Navigate to the EC2 Dashboard. Verify that John can successfully view, launch, stop, and terminate EC2 instances. This confirms the developer-policy is working.
 3. Attempt to access the S3 Dashboard. This attempt should fail with an explicit "Access Denied" or "You are not authorized" message. This is the desired behavior, confirming that John cannot access services outside his job requirements.
 
+-![23. john-signin-page.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/23.%20john-signin-page.png)
+
+-![24. john-dashboard.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/24.%20john-dashboard.png)
+
+-![25. john-ec2-creation.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/25.%20john-ec2-creation.png)
+
+-![26. john-ec2-creation1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/26.%20john-ec2-creation1.png)
+
+-![27. john-ec2-creation2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/27.%20john-ec2-creation2.png)
+
+-![28. john-ec2-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/28.%20john-ec2-created.png)
+
+-![34. John-access-denied.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/34.%20John-access-denied.png)
+
 Testing Mary's Access (Data Analyst)
 
 1. Log in to the AWS Console using Mary's unique sign-in URL and temporary password. Set a new password.
 2. Navigate to the S3 Dashboard. Verify that Mary can view buckets, create new buckets, and upload files.
 3. Attempt to access the EC2 Dashboard. This attempt should also fail, confirming her permissions are correctly restricted to only S3.
+
+-![29. mary-signin-page.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/29.%20mary-signin-page.png)
+
+-![30. mary-dashboard.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/30.%20mary-dashboard.png)
+
+-![31. s3-bucket-creation.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/31.%20s3-bucket-creation.png)
+
+-![32. s3-bucket-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/32.%20s3-bucket-created.png)
+
+-![33. mary-access-denied.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM/Screenshot/33.%20mary-access-denied.png)
 
 ## Project Reflection & Conceptual Deep Dive
 
