@@ -21,152 +21,108 @@ This project documents the initial and critical phase of the MarketPeak E-Commer
 5. Security Best Practices & Next Steps
 6. Troubleshooting
 
-1. Cloud Computing Primer
-What is "The Cloud"?
+## 1. Cloud Computing Primer
+### What is "The Cloud"?
 Imagine your personal computer or phone. It stores your photos, files, and applications locally. The cloud is a metaphor for a global network of powerful, remote servers that function as a massive, centralized digital storage space and processing unit. Instead of storing everything on your local device, you can store it securely on these servers and access it from anywhere with an internet connection. It's like having a magical, infinite backpack for your digital life that you can open from any device, anywhere.
 
-The "Pay-As-You-Go" Model
+### The "Pay-As-You-Go" Model
 A core principle of cloud computing is its economic model. Traditionally, businesses had to invest heavily upfront in physical servers, guessing their future needs. The cloud operates on a pay-as-you-go model. This means:
 
-You only pay for the specific resources you use (e.g., compute power, storage space, bandwidth).
+- You only pay for the specific resources you use (e.g., compute power, storage space, bandwidth).
+- If your application becomes popular and needs more resources, you can instantly scale up and your costs will increase proportionally.
+- If usage is low, you can scale down and pay less.
+- This eliminates large capital expenses and transforms IT costs into flexible operational expenses, making powerful computing accessible to startups and large enterprises alike.
 
-If your application becomes popular and needs more resources, you can instantly scale up and your costs will increase proportionally.
-
-If usage is low, you can scale down and pay less.
-
-This eliminates large capital expenses and transforms IT costs into flexible operational expenses, making powerful computing accessible to startups and large enterprises alike.
-
-2. Introduction to AWS
+## 2. Introduction to AWS
 Amazon Web Services (AWS) is the world's leading cloud provider. It offers over 200 fully-featured services from data centers globally. AWS provides the fundamental computing resources—servers, storage, databases, networking—that businesses use to build sophisticated applications with greater flexibility, scale, and reliability.
 
-Why AWS for MarketPeak?
+### Why AWS for MarketPeak?
 For the MarketPeak e-commerce platform, AWS provides the perfect foundation. We can start small with a free-tier EC2 virtual server to host our website. As the store grows, we can seamlessly add services like a managed database (Amazon RDS), a content delivery network (CloudFront), and scaling tools without any upfront hardware costs, paying only for the traffic and resources we consume.
 
-3. Prerequisites
+## 3. Prerequisites
 Before beginning, ensure you have the following ready:
 
-A valid email address not previously associated with an AWS account.
+- A valid email address not previously associated with an AWS account.
+- A mobile phone capable of receiving SMS (text messages) or voice calls for verification.
+- A valid credit card or debit card for identity verification.
+- Personal information for account details (full name, physical address, phone number).
 
-A mobile phone capable of receiving SMS (text messages) or voice calls for verification.
+## 4. Step-by-Step Account Creation Guide
+### Step 1: Initiate Sign-Up
+1. Navigate to the AWS Homepage and click "Create an AWS Account".
+2. On the "Create an AWS Account" page:
+  - Enter your Root user email address.
+  - Choose a unique AWS account name (e.g., marketpeak-prod).
+  - Click "Verify email address".
 
-A valid credit card or debit card for identity verification.
+### Step 2: Root User Email Verification
+3. Check the inbox of the email address you provided.
+4. Locate the email from AWS with the subject "AWS Email Verification".
+5. Copy the verification code from the email.
+6. Return to the AWS sign-up page, paste the code into the field, and click "Verify".
 
-Personal information for account details (full name, physical address, phone number).
+### Step 3: Set Root User Credentials
+7. Upon successful verification, you will be prompted to set a Root user password.
+  - Best Practice: Create a strong, unique password (a combination of uppercase, lowercase, numbers, and symbols). Do not use this password for any other service. Store it securely in a password manager.
 
-4. Step-by-Step Account Creation Guide
-Step 1: Initiate Sign-Up
-Navigate to the AWS Homepage and click "Create an AWS Account".
+8. Click "Continue".
 
-On the "Create an AWS Account" page:
+### Step 4: Provide Contact Information & Payment Details
+9. On the "Contact Information" page:
+  - Select "Personal" account type.
+  - Enter your full legal name, phone number, country, and full physical address accurately.
 
-Enter your Root user email address.
+10. Read and agree to the AWS Customer Agreement.
+11. Click "Continue".
+12. You will now be required to enter payment information.
+  - Important: AWS uses this to verify your identity. You will not be charged unless your usage exceeds the Always Free tier limits. A temporary authorization hold (typically $1-$3 USD) may appear on your statement and will be reversed shortly thereafter.
 
-Choose a unique AWS account name (e.g., marketpeak-prod).
+13. Enter your credit/debit card details and billing address. Click "Verify and Continue".
 
-Click "Verify email address".
+### Step 5: Identity Verification (SMS/Voice Call)
+14. To confirm your identity, AWS requires a second factor of verification.
+15. Choose your preferred method: Text message (SMS) or Voice call.
+16. Select your country code and enter your mobile number accurately.
+17. You will be presented with a CAPTCHA. Enter the displayed code to prove you are not a robot.
+18. Click "Send" to initiate the verification process.
+19. You will receive a one-time password (OTP) on your mobile device within moments.
+20. Enter the OTP in the provided field on the AWS sign-up page and click "Continue".
 
-Step 2: Root User Email Verification
-Check the inbox of the email address you provided.
+### Step 6: Select a Support Plan
+21. AWS will prompt you to choose a support plan.
+  - Basic plan - Free: Recommended for starting. Includes 24/7 customer service, access to AWS Personal Health Dashboard, and basic Trusted Advisor checks.
+  - (Developer, Business, Enterprise plans are paid options with enhanced support).
 
-Locate the email from AWS with the subject "AWS Email Verification".
+22. For this project, select the "Basic plan - Free" option.
+23. Click "Complete sign up".
 
-Copy the verification code from the email.
+### Step 7: Account Activation & Console Access
+24. You will see a confirmation screen: "Your Amazon Web Services account has been successfully created."
+25. Click "Go to the AWS Management Console".
+26. You will be redirected to the login page. Ensure "Root user" is selected and enter your root user email address. Click "Next".
+27. Enter your root user password and click "Sign in".
+28. You may be presented with another CAPTCHA. Enter the code and click "Submit".
+29. Success! You will see the AWS Management Console dashboard. Your account is now active and ready.
 
-Return to the AWS sign-up page, paste the code into the field, and click "Verify".
+## 5. Security Best Practices & Next Steps
+### IMMEDIATE ACTIONS REQUIRED:
 
-Step 3: Set Root User Credentials
-Upon successful verification, you will be prompted to set a Root user password.
-
-Best Practice: Create a strong, unique password (a combination of uppercase, lowercase, numbers, and symbols). Do not use this password for any other service. Store it securely in a password manager.
-
-Click "Continue".
-
-Step 4: Provide Contact Information & Payment Details
-On the "Contact Information" page:
-
-Select "Personal" account type.
-
-Enter your full legal name, phone number, country, and full physical address accurately.
-
-Read and agree to the AWS Customer Agreement.
-
-Click "Continue".
-
-You will now be required to enter payment information.
-
-Important: AWS uses this to verify your identity. You will not be charged unless your usage exceeds the Always Free tier limits. A temporary authorization hold (typically $1-$3 USD) may appear on your statement and will be reversed shortly thereafter.
-
-Enter your credit/debit card details and billing address. Click "Verify and Continue".
-
-Step 5: Identity Verification (SMS/Voice Call)
-To confirm your identity, AWS requires a second factor of verification.
-
-Choose your preferred method: Text message (SMS) or Voice call.
-
-Select your country code and enter your mobile number accurately.
-
-You will be presented with a CAPTCHA. Enter the displayed code to prove you are not a robot.
-
-Click "Send" to initiate the verification process.
-
-You will receive a one-time password (OTP) on your mobile device within moments.
-
-Enter the OTP in the provided field on the AWS sign-up page and click "Continue".
-
-Step 6: Select a Support Plan
-AWS will prompt you to choose a support plan.
-
-Basic plan - Free: Recommended for starting. Includes 24/7 customer service, access to AWS Personal Health Dashboard, and basic Trusted Advisor checks.
-
-(Developer, Business, Enterprise plans are paid options with enhanced support).
-
-For this project, select the "Basic plan - Free" option.
-
-Click "Complete sign up".
-
-Step 7: Account Activation & Console Access
-You will see a confirmation screen: "Your Amazon Web Services account has been successfully created."
-
-Click "Go to the AWS Management Console".
-
-You will be redirected to the login page. Ensure "Root user" is selected and enter your root user email address. Click "Next".
-
-Enter your root user password and click "Sign in".
-
-You may be presented with another CAPTCHA. Enter the code and click "Submit".
-
-Success! You will see the AWS Management Console dashboard. Your account is now active and ready.
-
-5. Security Best Practices & Next Steps
-IMMEDIATE ACTIONS REQUIRED:
-
-Enable MFA on Root User: This is critical. The root user has unlimited access to your account and billing. Go to the IAM (Identity and Access Management) service console and enable Multi-Factor Authentication (MFA) using a virtual device (e.g., Google Authenticator, Authy) for the root account. This adds a crucial layer of security beyond just a password.
-
-Create an IAM Admin User: Never use the root user for daily tasks. Create a separate IAM user with administrative permissions. Use this user for all console logins and programmatic access.
-
-Set up Billing Alarms: In the Cost Management (Billing) console, create budgets and alarms to notify you via email if your projected spending exceeds a defined threshold (e.g., $10). This protects against accidental overuse.
+1. Enable MFA on Root User: This is critical. The root user has unlimited access to your account and billing. Go to the IAM (Identity and Access Management) service console and enable Multi-Factor Authentication (MFA) using a virtual device (e.g., Google Authenticator, Authy) for the root account. This adds a crucial layer of security beyond just a password.
+2. Create an IAM Admin User: Never use the root user for daily tasks. Create a separate IAM user with administrative permissions. Use this user for all console logins and programmatic access.
+3. Set up Billing Alarms: In the Cost Management (Billing) console, create budgets and alarms to notify you via email if your projected spending exceeds a defined threshold (e.g., $10). This protects against accidental overuse.
 
 Proceed to Phase 1: With a secure AWS foundation, you can now begin provisioning the EC2 instance to deploy the MarketPeak application.
 
-6. Troubleshooting
-"Email is already associated with an account": Use a different email address or attempt to sign in to recover the existing account.
+## 6. Troubleshooting
+- "Email is already associated with an account": Use a different email address or attempt to sign in to recover the existing account.
+- SMS/Voice OTP Not Received:
+  - Double-check the phone number and country code.
+  - Check for poor signal or carrier message blocking.
+  - Wait 2-3 minutes and click "Send a new code".
+  - Try the alternative verification method.
+- Credit Card Declined:
+  - Verify all card details (number, expiry, CVV, name) are correct.
+  - Contact your bank to ensure they are not blocking international transactions or small authorization holds.
+  - Try a different credit or debit card.
 
-SMS/Voice OTP Not Received:
-
-Double-check the phone number and country code.
-
-Check for poor signal or carrier message blocking.
-
-Wait 2-3 minutes and click "Send a new code".
-
-Try the alternative verification method.
-
-Credit Card Declined:
-
-Verify all card details (number, expiry, CVV, name) are correct.
-
-Contact your bank to ensure they are not blocking international transactions or small authorization holds.
-
-Try a different credit or debit card.
-
-CAPTCHA Errors: Refresh the CAPTCHA and type the characters carefully, noting uppercase/lowercase letters.
+- CAPTCHA Errors: Refresh the CAPTCHA and type the characters carefully, noting uppercase/lowercase letters.
