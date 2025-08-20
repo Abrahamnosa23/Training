@@ -1,4 +1,4 @@
-# MarketPeak E-Commerce Platform: Phase 0 - AWS Account Foundation
+# AWS Account Foundation
 
 ## Project Overview & Goals
 This project documents the initial and critical phase of the MarketPeak E-Commerce Platform deployment: the creation and secure configuration of an Amazon Web Services (AWS) account. This foundational step is a mandatory prerequisite for all subsequent cloud infrastructure provisioning, including the EC2 instance that will host the application.
