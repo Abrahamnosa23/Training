@@ -22,6 +22,8 @@ Upon completion, you will be able to:
 - A basic understanding of AWS services (EC2, S3).
 - A mobile device with an authenticator app (e.g., Google Authenticator, Microsoft Authenticator).
 
+-![AWS-Console.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/AWS-Console.png)
+
 ## Core IAM Concepts
 
 IAM is the gatekeeper for your AWS resources, controlling who (authentication) can do what (authorization).
@@ -56,6 +58,12 @@ We avoid using broad AWS Managed Policies and instead create a tailored policy.
 9. Review the JSON summary to understand the policy structure.
 10. Click Create policy.
 
+-![dev-team-policy.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/dev-team-policy.png)
+
+-![dev-team-policy2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/dev-team-policy2.png)
+
+-![dev-team-policy3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/dev-team-policy3.png)
+
 ### Phase 2: Method A - Direct Policy Attachment (User: Eric)
 
 This method is useful for illustrating how policies work but is not scalable for teams.
@@ -75,6 +83,14 @@ Creating User Eric and Attaching the Policy
 11. Review the summary and click Create user.
 12. CRITICAL: Download the .csv file containing Eric's sign-in URL, username, and password. This is your only chance to get these credentials. Click Return to users list.
 
+-![user-eric.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-eric.png)
+
+-![user-eric2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-eric2.png)
+
+-![user-eric3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-eric3.png)
+
+-![user-eric-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-eric-created.png)
+
 ### Phase 3: Method B - Group-Based Permission Management (Users: Jack & Ade)
 
 This is the scalable, best-practice approach for managing team permissions.
@@ -86,6 +102,10 @@ A. Create the Group (Development-Team) and Attach the Policy
 3. Under Attach permissions policies, search for and select the development-policy.
 4. Click Create group.
 
+-![USER.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/USER.png)
+
+-![user-group.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-group.png)
+
 B. Create User Jack and Add to the Group
 
 1. Navigate to IAM Console > Users > Create user.
@@ -96,11 +116,35 @@ B. Create User Jack and Add to the Group
 6. Click Next, review, and click Create user.
 7. Download Jack's credentials.
 
+-![user-jack.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-jack.png)
+
+-![user-jack2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-jack2.png)
+
+-![user-jack3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-jack3.png)
+
+-![user-jack-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-jack-created.png)
+
 C. Create User Ade and Add to the Same Group
 
 1. Repeat the steps above for a new user named ade.
 2. Add ade to the Development-Team group during the user creation process.
 3. This demonstrates the power of groups: both jack and ade inherit identical permissions from their group membership instantly and consistently.
+
+-![user-ade.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-ade.png)
+
+-![user-ade2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-ade2.png)
+
+-![user-ade3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-ade3.png)
+
+-![user-ade-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/user-ade-created.png)
+
+-![dev-team-permission.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/dev-team-permission.png)
+
+-![dev-team-permission2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/dev-team-permission2.png)
+
+-![dev-team-permission3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/dev-team-permission3.png)
+
+-![dev-team-permission-created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Security_Identity_Management_IAM_2/Screenshot/dev-team-permission-created.png)
 
 ### Phase 4: Enforcing Multi-Factor Authentication (MFA)
 
