@@ -72,60 +72,6 @@ aws iam list-users
 
 If your configuration is correct, you will see a JSON response listing the IAM users in your account (or an empty list if there are none). If you get an error about permissions, the IAM user you created needs the **IAMReadOnlyAccess** or similar policy attached to it.
 
-### Method 2: The Modern Way (Using AWS CLI and Single Sign-On - SSO)
-
-If your company uses AWS SSO, this process is more secure and simpler.
-
-1. Install the AWS CLI (Same as Step 1 above).
-2. Configure for SSO:
-
-```bash
-aws configure sso
-```
-
-3. The CLI will prompt you to enter your SSO start URL, SSO region, and the account/role you want to use.
-4. It will automatically open your browser to complete the login. Once authenticated, the CLI will be configured to use short-term temporary credentials automatically.
-
-## How to Run Your Script
-
-Once your terminal is configured, running your script is easy:
-
-1. Navigate to the script's directory:
-
-```bash
-cd path\to\your\script\directory
-```
-
-2. Make sure the script is executable (if you're using Git Bash or WSL):
-
-```bash
-chmod +x aws-iam-management.sh
-```
-
-(Note: In standard Windows Command Prompt/PowerShell, file permissions work differently, and this step is usually not needed.)
-
-3. Execute the script:
-
-- In Bash (Git Bash/WSL):
-
-```bash
-./aws-iam-management.sh
-```
-
-- In PowerShell:
-
-```powershell
-.\aws-iam-management.sh
-In Command Prompt:
-```
-
-```cmd
-aws-iam-management.sh
-```
-
-The script will now use the AWS credentials you configured to create users, groups, and policies in your AWS account.
-
-
 ## Step 1: Define the IAM User Names Array
 
 The script provides an empty array **IAM_USER_NAMES=()**. We need to populate it with the names of the five IAM users we want to create.
