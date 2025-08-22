@@ -14,7 +14,7 @@ IAM_USER_NAMES=("devops-user1" "devops-user2" "devops-user3" "devops-user4" "dev
 # You can also use: IAM_USER_NAMES=("devops-user-{1..5}") but the expansion is trickier in shell arrays.
 ```
 
-### Thought Process: "I need to create five users. Storing their names in an array is the most efficient way because I can then loop through this single array for both user creation and group assignment, making the script DRY (Don't Repeat Yourself). If the company needs to add more users later, they only need to update this array."
+Thought Process: "I need to create five users. Storing their names in an array is the most efficient way because I can then loop through this single array for both user creation and group assignment, making the script DRY (Don't Repeat Yourself). If the company needs to add more users later, they only need to update this array."
 
 **## Step 2: Create the IAM Users by Iterating Through the Array**
 
