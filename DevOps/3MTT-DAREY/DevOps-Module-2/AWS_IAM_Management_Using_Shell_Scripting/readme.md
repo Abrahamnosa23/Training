@@ -47,7 +47,7 @@ create_iam_users() {
 }
 ```
 
-### Thought Process: "I need to perform the same action (user creation) for every item in the array. A for loop is perfect for this. I'll use "${IAM_USER_NAMES[@]}" to get all elements in the array. It's crucial to add error checking (if [ $? -eq 0 ]) after each AWS CLI command to make the script robust and provide clear feedback to the user if something goes wrong (e.g., if a user already exists)."
+Thought Process: "I need to perform the same action (user creation) for every item in the array. A for loop is perfect for this. I'll use "${IAM_USER_NAMES[@]}" to get all elements in the array. It's crucial to add error checking (if [ $? -eq 0 ]) after each AWS CLI command to make the script robust and provide clear feedback to the user if something goes wrong (e.g., if a user already exists)."
 
 **## Step 3: Create the 'admin' IAM Group**
 
