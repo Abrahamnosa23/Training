@@ -19,6 +19,18 @@ This is the most common and recommended method.
 - Follow the instructions on the screen. You can accept all the defaults.
 - The installer will add the aws command to your system's PATH.
 
+-![installation1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/installation1.png)
+
+-![installation2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/installation2.png)
+
+-![installation3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/installation3.png)
+
+-![installation4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/installation4.png)
+
+-![installation5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/installation5.png)
+
+-![installation_complete.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/installation_complete.png)
+
 3. Verify the Installation:
 
 - Open your terminal. You can use Command Prompt (cmd), PowerShell, or Windows Terminal.
@@ -29,6 +41,8 @@ aws --version
 ```
 
 - You should see output similar to aws-cli/2.15.0 Python/3.11.9 Windows/10 exe/AMD64.
+
+-![confirm_install.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/confirm_install.png)
 
 #### Step 2: Configure AWS Credentials
 
@@ -46,6 +60,14 @@ A. Get your AWS Access Keys (From the AWS Console):
 8. Click Create access key. THIS IS YOUR ONLY CHANCE TO SEE THE SECRET ACCESS KEY.
 9. IMPORTANT: Copy the Access Key ID and Secret Access Key and save them in a secure place. Do not share them or commit them to code.
 
+-![setup_key.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/setup_key.png)
+
+-![setup_key2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/setup_key2.png)
+
+-![setup_key3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/setup_key3.png)
+
+-![setup_key4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/setup_key4.png)
+
 B. Run the Configure Command:
 
 1. In your terminal, run the following command:
@@ -53,6 +75,7 @@ B. Run the Configure Command:
 ```bash
 aws configure
 ```
+-![confirm_install.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/confirm_install.png)
 
 2. You will be prompted to enter four pieces of information. Use the keys you just copied:
 
@@ -69,6 +92,8 @@ Test that everything is working by running a simple command that lists your IAM 
 ```bash
 aws iam list-users
 ```
+
+-![verify_configuration.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_IAM_Management_Using_Shell_Scripting/Screenshot/verify_configuration.png)
 
 If your configuration is correct, you will see a JSON response listing the IAM users in your account (or an empty list if there are none). If you get an error about permissions, the IAM user you created needs the **IAMReadOnlyAccess** or similar policy attached to it.
 
