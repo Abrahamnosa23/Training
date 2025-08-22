@@ -81,7 +81,7 @@ create_admin_group() {
 }
 ```
 
-### Thought Process: "The provided get-group command is a clever way to check for the group's existence. If the command fails (exit code $? is not 0, hence -ne 0), it means the group wasn't found, so we should create it. If it succeeds, we skip creation. This makes the script safe to run multiple times. If the group creation fails, it's a critical error, so we should exit the script entirely."
+Thought Process: "The provided get-group command is a clever way to check for the group's existence. If the command fails (exit code $? is not 0, hence -ne 0), it means the group wasn't found, so we should create it. If it succeeds, we skip creation. This makes the script safe to run multiple times. If the group creation fails, it's a critical error, so we should exit the script entirely."
 
 **## Step 4: Attach the AdministratorAccess Policy to the Group**
 
@@ -106,7 +106,7 @@ Code (to replace the second echo statement in the function):
     fi
 ```
 
-### Thought Process: "I need the exact ARN for the policy. AWS managed policies have a standard ARN format. The command might fail if the policy doesn't exist (unlikely for AdministratorAccess) or due to permission issues. The error check will catch this. Again, this is a critical step, so a failure should stop the script."
+Thought Process: "I need the exact ARN for the policy. AWS managed policies have a standard ARN format. The command might fail if the policy doesn't exist (unlikely for AdministratorAccess) or due to permission issues. The error check will catch this. Again, this is a critical step, so a failure should stop the script."
 
 **## Step 5: Add Users to the 'admin' Group**
 
@@ -138,7 +138,7 @@ add_users_to_admin_group() {
 }
 ```
 
-### Thought Process: "This is very similar to the user creation loop. We reuse the same array and the same looping logic. This consistency makes the script easy to understand. The error check here is important but perhaps not critical enough to stop the entire script—maybe one user fails but the others can still be added, so we log the error and continue."
+Thought Process: "This is very similar to the user creation loop. We reuse the same array and the same looping logic. This consistency makes the script easy to understand. The error check here is important but perhaps not critical enough to stop the entire script—maybe one user fails but the others can still be added, so we log the error and continue."
 
 **## Final, Complete Script**
 
@@ -292,4 +292,3 @@ I decomposed the project into the five core objectives. I realized objectives 2,
 ## Final Thought: 
 
 This script successfully automates a repetitive AWS administrative task, saving time and reducing the potential for human error. The structure and error handling make it a solid foundation that can be extended for more complex IAM management workflows in the future.
-
