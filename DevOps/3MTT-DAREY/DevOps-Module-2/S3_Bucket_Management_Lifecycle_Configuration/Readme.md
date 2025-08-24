@@ -162,6 +162,34 @@ This step makes a specific object publicly readable while the bucket itself rema
 
 -![bucket_permission2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/bucket_permission2.png)
 
+-![bucket_permission3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/bucket_permission3.png)
+
+-![setting_permission.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission.png)
+
+-![setting_permission2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission2.png)
+
+-![setting_permission3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission3.png)
+
+-![setting_permission4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission4.png)
+
+-![setting_permission5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission5.png)
+
+-[setting_permission6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission6.png)
+
+-![setting_permission7.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission7.png)
+
+-![setting_permission8.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission8.png)
+
+-![setting_permission9.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission9.png)
+
+-[setting_permission10.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission10.png)
+
+
+
+-![confirm_permission.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/confirm_permission.png)
+
+-![confirm_permission2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/confirm_permission2.png)
+
 
 
 5. Create a Lifecycle Rule
