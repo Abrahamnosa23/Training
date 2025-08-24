@@ -121,6 +121,15 @@ Management Interfaces
   - Click "Save changes".
   - Verify: Re-upload a modified version of your file. Navigate to the "Objects" tab and click "Show versions" to see both the original and the new version of your object.
 
+-![enable_versioning.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/enable_versioning.png)
+
+-![enable_versioning2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/enable_versioning2.png)
+
+-![enable_versioning3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/enable_versioning3.png)
+
+-![enable_versioning4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/enable_versioning4.png)
+  
+
 4. Configure a Bucket Policy for Public Read Access
 
 This step makes a specific object publicly readable while the bucket itself remains locked down.
@@ -149,6 +158,12 @@ This step makes a specific object publicly readable while the bucket itself rema
   - Click "Save changes".
   - Test: Click on an object in your bucket, copy the "Object URL", and paste it into an incognito browser window. The file should be accessible.
 
+-![bucket_permission.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/bucket_permission.png)
+
+-![bucket_permission2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/bucket_permission2.png)
+
+
+
 5. Create a Lifecycle Rule
 
 This rule automates cost savings by moving infrequently accessed objects to a cheaper storage class.
@@ -161,6 +176,15 @@ This rule automates cost savings by moving infrequently accessed objects to a ch
     - Select "Standard-IA" from the dropdown.
     - Set "Days after object creation" to 30.
   - Complete the rule creation process. After 30 days, any object in the bucket will be automatically transitioned to Standard-IA.
+
+-![lifecycle.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/lifecycle.png)
+
+-![lifecycle2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/lifecycle2.png)
+
+-![lifecycle3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/lifecycle3.png)
+
+-![lifecycle4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/lifecycle4.png)
+
 ---
 ## Security Considerations
 
