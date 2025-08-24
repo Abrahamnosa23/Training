@@ -1,6 +1,6 @@
 
 # AWS S3 Mini Project: Bucket Management & Lifecycle Configuration
-
+---
 ## Overview
 This project provides a hands-on guide to core functionalities of Amazon Simple Storage Service (S3). It begins with the essential theoretical concepts of S3 before walking through the practical process of creating a secure S3 bucket, managing objects, implementing version control, configuring public access permissions via bucket policies, and optimizing storage costs with lifecycle rules.
 
