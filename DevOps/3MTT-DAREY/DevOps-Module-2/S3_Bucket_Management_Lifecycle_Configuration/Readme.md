@@ -3,7 +3,6 @@
 ---
 ## Overview
 This project provides a hands-on guide to core functionalities of Amazon Simple Storage Service (S3). It begins with the essential theoretical concepts of S3 before walking through the practical process of creating a secure S3 bucket, managing objects, implementing version control, configuring public access permissions via bucket policies, and optimizing storage costs with lifecycle rules.
-
 The project is designed for individuals beginning their cloud journey with AWS, offering a solid theoretical foundation and practical experience in fundamental S3 operations that are critical for real-world data storage and management scenarios.
 ---
 ## Project Goals
