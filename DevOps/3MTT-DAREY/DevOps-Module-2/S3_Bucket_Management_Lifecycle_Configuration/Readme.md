@@ -82,13 +82,37 @@ Management Interfaces
   - Bucket Versioning: Select "Disable" for now. We will enable it in a later step.
   - Leave all other settings as default and click "Create bucket".
 
+-![AWS_Console.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/AWS_Console.png)
+
+-![s3bucket.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/s3bucket.png)
+
+-[s3bucket2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/s3bucket2.png)
+
+-[s3bucket3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/s3bucket3.png)
+
+-[s3bucket_created.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/s3bucket_created.png)
+
 ### Troubleshooting: If you receive a "Bucket name already exists" error, choose a different name. Bucket names must be unique across all of AWS.
+
+-![s3bucket_error_creating.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/s3bucket_error_creating.png)
 
 2. Upload an Object
   - Click on your newly created bucket from the S3 buckets list.
   - Click the "Upload" button.
   - Click "Add files" or "Add folder" and select your demo file (e.g., example.txt).
   - Click "Upload".
+
+-![objectupload.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/objectupload.png)
+
+-[objectupload2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/objectupload2.png)
+
+-[objectupload3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/objectupload3.png)
+
+-[objectupload4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/objectupload4.png)
+
+-[objectupload5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/objectupload5.png)
+
+-[objectupload6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/objectupload6.png)
 
 3. Enable Versioning
   - Inside your bucket, navigate to the "Properties" tab.
