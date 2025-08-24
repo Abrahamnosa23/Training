@@ -148,22 +148,15 @@ This project intentionally interacts with security settings. Please be mindful o
 ---
 ## Troubleshooting Common Errors
 
-|Error Message	|Likely Cause	|Solution|
-||--------------|-------------|--------|
-|"The bucket you tried to create already exists..."	|S3 bucket names are globally unique across all AWS accounts.	|Choose a more unique name, often by adding numbers or a suffix.|
-|"Access Denied" when accessing Object URL|	1. Bucket policy has a typo.
-2. Block all public access is still fully on.
-3. The object's ACL is private.	|1. Check the policy JSON and bucket name in the ARN.
-2. In the bucket's "Permissions" -> "Block Public Access", ensure no settings are checked that would override the policy.
-3. Since we disabled ACLs, this should not be the issue.|
-|"This XML file does not appear to have any style information..."	|The bucket policy is correct, but you are trying to list the bucket's contents (which is not allowed), not get a specific object.	|The policy only allows s3:GetObject. Use the full, direct URL to a specific file (e.g., https://my-bucket.s3.region.amazonaws.com/file.txt).|
-|Cannot delete bucket	|The bucket is not empty. With versioning enabled, you must delete all object versions.	|1. Go to the "Objects" tab.
-2. Click "Show versions".
-3. Select all objects and all their versions and choose "Delete".
-4. You can then delete the empty bucket.|
+| Error Message | Likely Cause | Solution |
+| :--- | :--- | :--- |
+| `"The bucket you tried to create already exists..."` | S3 bucket names are globally unique across all AWS accounts. | Choose a more unique name, often by adding numbers or a suffix. |
+| `"Access Denied"` when accessing Object URL | 1. Bucket policy has a typo. <br> 2. `Block all public access` is still fully on. <br> 3. The object's ACL is private. | 1. Check the policy JSON and bucket name in the ARN. <br> 2. In the bucket's "Permissions" -> "Block Public Access", ensure no settings are checked that would override the policy. <br> 3. Since we disabled ACLs, this should not be the issue. |
+| `"This XML file does not appear to have any style information..."` | The bucket policy is correct, but you are trying to list the bucket's contents (which is not allowed), not get a specific object. | The policy only allows `s3:GetObject`. Use the full, direct URL to a specific file (e.g., `https://my-bucket.s3.region.amazonaws.com/file.txt`). |
+| Cannot delete bucket | The bucket is not empty. With versioning enabled, you must delete all object versions. | 1. Go to the "Objects" tab. <br> 2. Click "Show versions". <br> 3. Select all objects and all their versions and choose "Delete". <br> 4. You can then delete the empty bucket. |
+
 ---
 ## AWS & Global Best Practices
-
 This project incorporates several key AWS best practices:
   - Secure by Default: The bucket was created with all public access blocked and ACLs disabled, following the "secure by default" principle.
   - Infrastructure as Code (IaC): While done manually here, these actions (bucket, policy, lifecycle rule) should be defined using AWS CloudFormation or Terraform for reproducible, version-controlled infrastructure in a real-world environment.
