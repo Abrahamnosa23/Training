@@ -184,7 +184,7 @@ This step makes a specific object publicly readable while the bucket itself rema
 
 -[setting_permission10.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission10.png)
 
-
+-![setting_permission11.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/setting_permission11.png)
 
 -![confirm_permission.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/S3_Bucket_Management_Lifecycle_Configuration/Screenshot/confirm_permission.png)
 
