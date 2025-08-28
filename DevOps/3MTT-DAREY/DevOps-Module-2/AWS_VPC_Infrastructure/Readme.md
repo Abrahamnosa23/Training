@@ -133,6 +133,22 @@ VPC endpoints provide private connectivity between your VPC and supported AWS se
 
 -![routetable.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable.png)
 
+-![routetable1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable1.png)
+
+-![routetable2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable2.png)
+
+-![routetable3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable3.png)
+
+-![routetable4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable4.png)
+
+-![routetable5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable5.png)
+
+-![routetable6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable6.png)
+
+-![routetable7.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable7.png)
+
+-![routetable8.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable8.png)
+
 
 4. NAT Gateway Implementation
 - Create a NAT Gateway in a public subnet
@@ -169,7 +185,51 @@ VPC endpoints provide private connectivity between your VPC and supported AWS se
 - Update route tables in both VPCs to include routes to peered VPC CIDR blocks
 - Ensure non-overlapping CIDR blocks between peered VPCs
 
--![
+-![vpcpeering.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering.png)
+
+-![vpcpeering1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering1.png)
+
+-![vpcpeering2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering2.png)
+
+-![vpcpeering3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering3.png)
+
+-![vpcpeering4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering4.png)
+
+-![vpcpeering5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering5.png)
+
+-![vpcpeering6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering6.png)
+
+-![vpcpeering7.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering7.png)
+
+-![vpcpeering8.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering8.png)
+
+-![vpcpeering9.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering9.png)
+
+-![vpcpeering10.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering10.png)
+
+-![vpcpeering11.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering11.png)
+
+-![vpcpeering12.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering12.png)
+
+-![vpcpeering13.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering13.png)
+
+-![vpcpeering14.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering14.png)
+
+-![vpcpeering15.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering15.png)
+
+-![vpcpeering16.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering16.png)
+
+-![vpcpeering17.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering17.png)
+
+-![vpcpeering18.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering18.png)
+
+-![vpcpeering19.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering19.png)
+
+-![vpcpeering20.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering20.png)
+
+-![vpcpeering21.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering21.png)
+
+-![vpcpeering22.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpcpeering22.png)
 
 
 6. VPC Endpoint Configuration
