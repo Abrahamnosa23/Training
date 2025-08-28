@@ -83,23 +83,95 @@ VPC endpoints provide private connectivity between your VPC and supported AWS se
 1. VPC Creation
 - Create a VPC with CIDR block between /16 and /28
 - Ensure CIDR blocks don't overlap with other networks
+
+-![vpc-creation.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpc-creation.png)
+
+-![vpc-creation1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpc-creation1.png)
+
+-![vpc-creation2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpc-creation2.png)
+
+-![vpc-creation3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpc-creation3.png)
+
+-![vpc-creation4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/vpc-creation4.png)
+
 2. Subnet Configuration
 - Create public and private subnets in different availability zones
 - Assign appropriate CIDR blocks to each subnet
 - Use consistent naming conventions for identification
+
+-![subnet_creation.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/subnet_creation.png)
+
+-![subnet_creation1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/subnet_creation1.png)
+
+-![subnet_creation2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/subnet_creation2.png)
+
+-![subnet_creation3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/subnet_creation3.png)
+
+-![subnet_creation4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/subnet_creation4.png)
+
+-![subnet_creation5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/subnet_creation5.png)
+
+-![subnet_creation6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/subnet_creation6.png)
+
 3. Internet Gateway Setup
 - Create an Internet Gateway
 - Attach it to the VPC
 - Configure route tables to direct internet-bound traffic (0.0.0.0/0) to the gateway
+
+-![internetgateway.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/internetgateway.png)
+
+-![internetgateway2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/internetgateway2.png)
+
+-![internetgateway3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/internetgateway3.png)
+
+-![internetgateway4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/internetgateway4.png)
+
+-![internetgateway5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/internetgateway5.png)
+
+-![internetgateway6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/internetgateway6.png)
+
+
+-![routetable.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/routetable.png)
+
+
 4. NAT Gateway Implementation
 - Create a NAT Gateway in a public subnet
 - Allocate an Elastic IP address
 - Update private subnet route tables to direct outbound traffic to the NAT Gateway
+
+-![natgateway.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway.png)
+
+-![natgateway1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway1.png)
+
+-![natgateway2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway2.png)
+
+-![natgateway3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway3.png)
+
+-![natgateway4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway4.png)
+
+-![natgateway5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway5.png)
+
+-![natgateway6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway6.png)
+
+-![natgateway7.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway7.png)
+
+-![natgateway8.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway8.png)
+
+-![natgateway9.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway9.png)
+
+-![natgateway10.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway10.png)
+
+-![natgateway11.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_VPC_Infrastructure/Screenshot/natgateway11.png)
+
 5. VPC Peering Establishment
 - Create peering connection between VPCs
 - Accept the peering request
 - Update route tables in both VPCs to include routes to peered VPC CIDR blocks
 - Ensure non-overlapping CIDR blocks between peered VPCs
+
+-![
+
+
 6. VPC Endpoint Configuration
 - Create interface or gateway endpoints for AWS services (e.g., S3)
 - Ensure private connectivity without traversing the public internet
