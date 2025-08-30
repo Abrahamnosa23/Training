@@ -21,60 +21,49 @@ Project Duration: 2 hours
 **Definition:** Security Groups act as stateful virtual firewalls at the instance level, controlling traffic to AWS resources like EC2 instances.
 
 #### Key Characteristics:
-* **Stateful:** Automatically allow return traffic for established connections
-* **Allow Rules Only:** Cannot explicitly deny traffic (only allow or implicit deny)
-* **Instance-Level:** Applied to individual AWS resources
-* **Evaluated First:** Traffic must pass Security Group rules before NACL evaluation
+- **Stateful:** Automatically allow return traffic for established connections
+- **Allow Rules Only:** Cannot explicitly deny traffic (only allow or implicit deny)
+- **Instance-Level:** Applied to individual AWS resources
+- **Evaluated First:** Traffic must pass Security Group rules before NACL evaluation
 
 #### Components:
+- **Inbound Rules:** Control incoming traffic to instances
+- **Outbound Rules:** Control outgoing traffic from instances
+- **Protocol/Port Based:** Rules specify protocols (TCP, UDP, ICMP) and port numbers
+- **Source/Destination:** Defined by IP ranges (CIDR blocks) or other security groups
 
-**Inbound Rules:** Control incoming traffic to instances
+### Network Access Control Lists (Subnet-Level Firewall)
+**Definition:** NACLs act as stateless network firewalls at the subnet level, providing an additional layer of security.
 
-**Outbound Rules:** Control outgoing traffic from instances
+#### Key Characteristics:
+- **Stateless:** Require explicit rules for both inbound and outbound traffic
+- **Allow/Deny Rules:** Can explicitly allow or deny specific traffic
+- **Subnet-Level:** Applied to entire subnets
+- **Rule Numbering:** Rules are evaluated in order (lowest number first)
+- **First Line of Defense:** Traffic hits NACL before reaching Security Groups
 
-**Protocol/Port Based:** Rules specify protocols (TCP, UDP, ICMP) and port numbers
+#### Components:
+- **Inbound Rules:** Control traffic entering the subnet
+- **Outbound Rules:** Control traffic leaving the subnet
+- **Rule Number:** Determines evaluation order (1-32766)
+- **Protocol:** TCP, UDP, ICMP, or custom
+- **CIDR Blocks:** Source/destination IP ranges
 
-**Source/Destination:** Defined by IP ranges (CIDR blocks) or other security groups
+## Comparison: Security Groups vs. NACLs
+|----------------------------------|-----------------------------|----------------------------|
+|Aspect	                           | Security Groups	           | NACLs                      |
+|----------------------------------|-----------------------------|----------------------------|
+| Scope	                           | Instance level	             | Subnet level               |
+| State	                           | Stateful	                   | Stateless                  |
+| Rule Types	                     | Allow only	                 | Allow + Deny               |
+| Evaluation	                     | All rules evaluated	       | Rules evaluated in order   |
+| Default Behavior	               | Implicit deny all inbound, allow all outbound	| Default NACL: allow all in/out  |
+| Association	                     | Multiple groups per instance	          | One NACL per subnet    |
 
-####Network Access Control Lists (Subnet-Level Firewall)
-Definition: NACLs act as stateless network firewalls at the subnet level, providing an additional layer of security.
 
-Key Characteristics:
-
-Stateless: Require explicit rules for both inbound and outbound traffic
-
-Allow/Deny Rules: Can explicitly allow or deny specific traffic
-
-Subnet-Level: Applied to entire subnets
-
-Rule Numbering: Rules are evaluated in order (lowest number first)
-
-First Line of Defense: Traffic hits NACL before reaching Security Groups
-
-Components:
-
-Inbound Rules: Control traffic entering the subnet
-
-Outbound Rules: Control traffic leaving the subnet
-
-Rule Number: Determines evaluation order (1-32766)
-
-Protocol: TCP, UDP, ICMP, or custom
-
-CIDR Blocks: Source/destination IP ranges
-
-Comparison: Security Groups vs. NACLs
-Aspect	Security Groups	NACLs
-Scope	Instance level	Subnet level
-State	Stateful	Stateless
-Rule Types	Allow only	Allow + Deny
-Evaluation	All rules evaluated	Rules evaluated in order
-Default Behavior	Implicit deny all inbound, allow all outbound	Default NACL: allow all in/out
-Association	Multiple groups per instance	One NACL per subnet
-Implementation Guide
+## Implementation Guide
 1. Security Group Configuration
 Creating a Security Group:
-
 Navigate to VPC > Security Groups in AWS Console
 
 Click "Create Security Group"
