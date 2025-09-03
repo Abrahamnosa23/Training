@@ -85,6 +85,25 @@ Creating a Security Group:
 
 -![editinboundrule.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editinboundrule.png)
 
+-![editinboundrule1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editinboundrule1.png)
+
+-![editinboundrule2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editinboundrule2.png)
+
+-![editinboundrule3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editinboundrule3.png)
+
+-![editinboundrule4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editinboundrule4.png)
+
+-![editoutboundrule.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editoutboundrule.png)
+
+-![editoutboundrule1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editoutboundrule1.png)
+
+-![editoutboundrule2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editoutboundrule2.png)
+
+-![editoutboundrule3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editoutboundrule3.png)
+
+-![editoutboundrule4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editoutboundrule4.png)
+
+-![editoutboundrule5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editoutboundrule5.png)
 
 Attaching to EC2 Instance:
   1. Select your EC2 instance
@@ -92,8 +111,29 @@ Attaching to EC2 Instance:
   3. Add the new security group
   4. Save changes
 
+-![Webserver.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/Webserver.png)
 
+-![Webserver1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/Webserver1.png)
 
+-![Webserver2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/Webserver2.png)
+
+-![Webserver3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/Webserver3.png)
+
+-![Webserver4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/Webserver4.png)
+
+-![Webserver5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/Webserver5.png)
+
+-![Webserver6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/Webserver6.png)
+
+-![httpoutbound.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/httpoutbound.png)
+
+-![httpoutbound1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/httpoutbound1.png)
+
+-![httpoutbound2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/httpoutbound2.png)
+
+-![httpoutbound3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/httpoutbound3.png)
+
+-![httpoutbound4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/httpoutbound4.png)
 
 2. NACL Configuration
 Creating a NACL:
@@ -102,8 +142,13 @@ Creating a NACL:
   3. Select the appropriate VPC
   4. Click "Create"
 
+-![nacl.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/nacl.png)
 
+-![nacl1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/nacl1.png)
 
+-![nacl2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/nacl2.png)
+
+-![nacl3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/nacl3.png)
 
 Configuring Rules:
   1. Select your NACL
@@ -115,9 +160,25 @@ Configuring Rules:
   3. Edit outbound rules (must explicitly allow return traffic)
   4. Save changes
 
+-![naclsubnetassin.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassin.png)
 
+-![naclsubnetassin1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassin1.png)
 
+-![naclsubnetassin2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassin2.png)
 
+-![naclsubnetassin3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassin3.png)
+
+-![naclsubnetassin4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassin4.png)
+
+-![naclsubnetassout.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassout.png)
+
+-![naclsubnetassout1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassout1.png)
+
+-![naclsubnetassout2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassout2.png)
+
+-![naclsubnetassout3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassout3.png)
+
+-![naclsubnetassout4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetassout4.png)
 
 Associating with Subnet:
   1. Select your NACL
@@ -125,8 +186,15 @@ Associating with Subnet:
   3. Select the appropriate subnet
   4. Save changes
 
+-![naclsubnetass.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetass.png)
 
+-![naclsubnetass1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetass1.png)
 
+-![naclsubnetass2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetass2.png)
+
+-![naclsubnetass3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetass3.png)
+
+-![naclsubnetass4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/naclsubnetass4.png)
 
 
 ## Scenario Analysis
