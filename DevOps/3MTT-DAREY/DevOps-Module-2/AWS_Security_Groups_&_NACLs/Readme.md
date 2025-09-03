@@ -71,11 +71,29 @@ Creating a Security Group:
   5. Configure outbound rules (typically allow all for web servers)
   6. Click "Create Security Group"
 
+-![createsecuritygroup.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/createsecuritygroup.png)
+
+-![createsecuritygroup1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/createsecuritygroup1.png)
+
+-![createsecuritygroup2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/createsecuritygroup2.png)
+
+-![createsecuritygroup3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/createsecuritygroup3.png)
+
+-![createsecuritygroup4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/createsecuritygroup4.png)
+
+-![createsecuritygroup5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/createsecuritygroup5.png)
+
+-![editinboundrule.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/AWS_Security_Groups_%26_NACLs/Screenshot/editinboundrule.png)
+
+
 Attaching to EC2 Instance:
   1. Select your EC2 instance
   2. Actions > Security > Change Security Groups
   3. Add the new security group
   4. Save changes
+
+
+
 
 2. NACL Configuration
 Creating a NACL:
@@ -83,6 +101,9 @@ Creating a NACL:
   2. Click "Create Network ACL"
   3. Select the appropriate VPC
   4. Click "Create"
+
+
+
 
 Configuring Rules:
   1. Select your NACL
@@ -94,11 +115,19 @@ Configuring Rules:
   3. Edit outbound rules (must explicitly allow return traffic)
   4. Save changes
 
+
+
+
+
 Associating with Subnet:
   1. Select your NACL
   2. Actions > Edit subnet associations
   3. Select the appropriate subnet
   4. Save changes
+
+
+
+
 
 ## Scenario Analysis
 The project explored several configurations to understand interaction between Security Groups and NACLs:
