@@ -18,7 +18,7 @@ Contributing
 
 Security & Compliance
 
-[Troubleshooting](#-troubleshooting)
+[Troubleshooting](#-troubleshooting) <!-- #-troubleshooting -->
 
 Summary
 
