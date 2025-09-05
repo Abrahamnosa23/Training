@@ -2,27 +2,17 @@ AWS Resource Automation Script
 This project guides you through creating a Bash shell script to automate the provisioning of key AWS resources: EC2 instances and S3 buckets. The script utilizes functions for modularity and arrays for efficient, loop-based resource creation.
 
 📋 Table of Contents
-Features
-
-Prerequisites
-
-Project Structure
-
-Setup and Configuration
-
-Usage
-
-Functions Overview
-
-Contributing
-
-Security & Compliance
-
-[Troubleshooting](#-troubleshooting) <!-- #-troubleshooting -->
-
-Summary
-
-License
+1.  [Features](#-features) <!-- #-features -->
+2.  [Prerequisites](#-prerequisites) <!-- #-prerequisites -->
+3.  [Project Structure](#-project-structure) <!-- #-project-structure -->
+4.  [Setup and Configuration](#-setup-and-configuration) <!-- #-setup-and-configuration -->
+5.  [Usage](#-usage) <!-- #-usage -->
+6.  [Functions Overview](#-functions-overview) <!-- #-functions-overview -->
+7.  [Contributing](#-contributing) <!-- #-contributing -->
+8.  [Security & Compliance](#-security--compliance) <!-- #-security--compliance -->
+9.  [Troubleshooting](#-troubleshooting) <!-- #-troubleshooting -->
+10. [Summary](#-summary) <!-- #-summary -->
+11. [License](#-license) <!-- #-license -->
 
 Learning Objectives
 By completing this project, you will learn and practice:
