@@ -254,7 +254,7 @@ We welcome contributions to improve this automation script. Please follow our gu
 - **Compliance:** Bucket names and tags should adhere to your organization's naming conventions and compliance requirements (e.g., GDPR, HIPAA). Add relevant tags to resources within the script using the --tags flag in AWS CLI commands.
 
 ## Troubleshooting
-
+|----------------------------------|-----------------------------------|---------------------------------------------------|
 Issue	Possible Cause	Solution
 |------------------------------|---------------------------------------|------------------------------------------------|
 | An error occurred (AuthFailure) ...	| Invalid AWS credentials or insufficient permissions.	| Run aws configure again. Verify IAM permissions.|
