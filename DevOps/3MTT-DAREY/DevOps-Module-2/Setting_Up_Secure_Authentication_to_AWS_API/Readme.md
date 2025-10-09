@@ -40,6 +40,7 @@ By completing this project, you will:
 .
 
 ├── README.md                         # Project documentation
+├── Screenshot                        # Project steps screenshoht documentation
 └── scripts/                          # (Optional) Bash or automation scripts
     ├── automation-ec2-s3-policy.json     # IAM Policy granting full EC2 & S3 access
     ├── automation-role-trust.json        # Trust policy for automation_role
@@ -77,6 +78,20 @@ aws iam create-policy \
 
 ---
 
+-![CreatetheIAMpolicy.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMpolicy.png)
+
+-![CreatetheIAMpolicy1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMpolicy1.png)
+
+-![CreatetheIAMpolicy2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMpolicy2.png)
+
+-![CreatetheIAMpolicy3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMpolicy3.png)
+
+-![CreatetheIAMpolicy4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMpolicy4.png)
+
+-![CreatetheIAMpolicy5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMpolicy5.png)
+
+-![CreatetheIAMpolicy6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMpolicy6.png)
+
 ### 2. Create IAM Role and Attach the Policy
 
 Create a role (`automation_role`) trusted by the automation user.
@@ -112,6 +127,18 @@ aws iam attach-role-policy \
 
 ---
 
+-![CreateanIAMRole.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreateanIAMRole.png)
+
+-![CreateanIAMRole1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreateanIAMRole1.png)
+
+-![CreateanIAMRole2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreateanIAMRole2.png)
+
+-![CreateanIAMRole3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreateanIAMRole3.png)
+
+-![CreateanIAMRole4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreateanIAMRole4.png)
+
+-![CreateanIAMRole5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreateanIAMRole5.png)
+
 ### 3. Create IAM User for Automation
 
 Create an IAM user (`automation_user`) with **Programmatic Access**.
@@ -125,6 +152,26 @@ aws iam create-access-key --user-name automation_user
 
 ---
 
+-![CreatetheIAMuser.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser.png)
+
+-![CreatetheIAMuser1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser1.png)
+
+-![CreatetheIAMuser2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser2.png)
+
+-![CreatetheIAMuser3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser3.png)
+
+-![CreatetheIAMuser4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser4.png)
+
+-![CreatetheIAMuser5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser5.png)
+
+-[CreatetheIAMuser6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser6.png)
+
+-![CreatetheIAMuser7.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser7.png)
+
+-![CreatetheIAMuser8.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser8.png)
+
+-![CreatetheIAMuser9.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/CreatetheIAMuser9.png)
+
 ### 4. Attach Policy to the User
 
 Grant the same EC2 and S3 access to the user.
@@ -134,6 +181,17 @@ aws iam attach-user-policy \
   --user-name automation_user \
   --policy-arn arn:aws:iam::ACCOUNT_ID:policy/AutomationEC2S3FullAccess
 ```
+
+
+-![AttachtheIAMpolicytotheuser.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/AttachtheIAMpolicytotheuser.png)
+
+-![AttachtheIAMpolicytotheuser1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/AttachtheIAMpolicytotheuser1.png)
+
+-![AttachtheIAMpolicytotheuser2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/AttachtheIAMpolicytotheuser2.png)
+
+-![AttachtheIAMpolicytotheuser3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/AttachtheIAMpolicytotheuser3.png)
+
+-![AttachtheIAMpolicytotheuser4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/AttachtheIAMpolicytotheuser4.png)
 
 ---
 
@@ -163,6 +221,20 @@ aws iam put-user-policy \
   --policy-document file://allow-assume-role.json
 ```
 
+-![allow-assume-role.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/allow-assume-role.png)
+
+-![allow-assume-role1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/allow-assume-role1.png)
+
+-![allow-assume-role2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/allow-assume-role2.png)
+
+-![allow-assume-role3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/allow-assume-role3.png)
+
+-![allow-assume-role4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/allow-assume-role4.png)
+
+-![allow-assume-role5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/allow-assume-role5.png)
+
+-![allow-assume-role6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/allow-assume-role6.png)
+
 ---
 
 ### 6. Install AWS CLI (Linux)
@@ -175,6 +247,19 @@ unzip awscliv2.zip
 sudo ./aws/install
 aws --version
 ```
+-![InstallatheAWSCLIv2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/InstallatheAWSCLIv2.png)
+
+-![InstallatheAWSCLIv21.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/InstallatheAWSCLIv21.png)
+
+-![InstallatheAWSCLIv22.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/InstallatheAWSCLIv22.png)
+
+-![InstallatheAWSCLIv23.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/InstallatheAWSCLIv23.png)
+
+-![InstallatheAWSCLIv24.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/InstallatheAWSCLIv24.png)
+
+-![InstallatheAWSCLIv25.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/InstallatheAWSCLIv25.png)
+
+-![InstallatheAWSCLIv26.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/InstallatheAWSCLIv26.png)
 
 ---
 
@@ -185,6 +270,8 @@ Run the configuration wizard and enter the user credentials.
 ```bash
 aws configure --profile automation
 ```
+-![configuretheawscli.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/configuretheawscli.png)
+
 
 Provide:
 
@@ -203,6 +290,10 @@ Run test commands to validate AWS CLI connectivity.
 aws ec2 describe-regions --output table --profile automation
 aws s3 ls --profile automation
 ```
+
+-![testtheconfiguration.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/testtheconfiguration.png)
+
+-![testtheconfiguration1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Setting_Up_Secure_Authentication_to_AWS_API/Screenshot/testtheconfiguration1.png)
 
 If these commands succeed without error, setup is complete.
 
