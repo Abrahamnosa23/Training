@@ -37,6 +37,10 @@ By combining these concepts, we build a **dynamic shell script** that adapts to 
 
 Each environment has unique configurations, credentials, and target infrastructure.
 
+-![awscliconfigre.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/awscliconfigre.png)
+
+-![Cloud Environment Workflow Breakdown.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Cloud%20Environment%20Workflow%20Breakdown.png)
+
 ---
 
 ### 🔐 Environment Variables
@@ -53,6 +57,12 @@ Example:
 
 These variables are dynamically loaded based on the environment argument passed to the script.
 
+-![awscliprofilecreation.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/awscliprofilecreation.png)
+
+-![awscliprofilecreation2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/awscliprofilecreation2.png)
+
+-![scripttesting.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/scripttesting.png)
+
 ---
 
 ## ⚙️ Project Requirements
@@ -65,7 +75,48 @@ These variables are dynamically loaded based on the environment argument passed 
   sudo apt install awscli -y
   aws configure
 
----
+-![Prepareyourenvironmentlocal.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal.png)
+
+-![Prepareyourenvironmentlocal (2).png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal%20(2).png)
+
+-![Prepareyourenvironmentlocal2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal2.png)
+
+-![Prepareyourenvironmentlocal3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal3.png)
+
+-![Prepareyourenvironmentlocal3 (2).png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal3%20(2).png)
+
+-![Prepareyourenvironmentlocal4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal4.png)
+
+-![Prepareyourenvironmentlocal4 (2).png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal4%20(2).png)
+
+-![Prepareyourenvironmentlocal5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal5.png)
+
+-![Prepareyourenvironmentlocal6.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal6.png)
+
+-![Prepareyourenvironmentlocal7.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentlocal7.png)
+
+-![Prepareyourenvironmentproduction.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentproduction.png)
+
+-![Prepareyourenvironmentproduction1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentproduction1.png)
+
+-![Prepareyourenvironmentproduction2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentproduction2.png)
+
+-![Prepareyourenvironmentproduction3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentproduction3.png)
+
+-![Prepareyourenvironmentproduction4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmentproduction4.png)
+
+-![Prepareyourenvironmenttesting.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmenttesting.png)
+
+-![Prepareyourenvironmenttesting1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmenttesting1.png)
+
+-![Prepareyourenvironmenttesting2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmenttesting2.png)
+
+-![Prepareyourenvironmenttesting3.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmenttesting3.png)
+
+-![Prepareyourenvironmenttesting4.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmenttesting4.png)
+
+-![Prepareyourenvironmenttesting5.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/Prepareyourenvironmenttesting5.png)
+
 
 ## 🧱 Script: aws_cloud_manager.sh
 
@@ -153,6 +204,13 @@ echo "Script execution completed for: $ENVIRONMENT"
 echo "---------------------------------------------------"
 ```
 
+-![scriptcreation.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/scriptcreation.png)
+
+-![scriptcreation1.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/scriptcreation1.png)
+
+-![scriptcreation2.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/scriptcreation2.png)
+
+
 ---
 
 ## 🧾 Usage Instructions
@@ -181,6 +239,8 @@ Local Environment
 ./aws_cloud_manager.sh production
 ```
 
+-![scripttesting.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/scripttesting.png)
+
 ---
 
 ## 🧪 Example Output
@@ -202,6 +262,8 @@ make_bucket: s3://fittech-testing-bucket-38219
 Script execution completed for: testing
 ---------------------------------------------------
 ```
+
+-![scripttesting.png](https://github.com/Abrahamnosa23/Training/blob/main/DevOps/3MTT-DAREY/DevOps-Module-2/Understanding-Environment-Variables-Infrastructure-Environments/Screenshot/scripttesting.png)
 
 ---
 
