@@ -97,17 +97,18 @@ kubectl describe pod coredns-5dd5756b68-srdms -n kube-system
 
 Key Information Displayed:
 
-Field	Description
-Name	Name of the Pod
-Namespace	Logical grouping of resources
-Node	Node hosting the Pod
-Containers	Containers running in the Pod
-Events	Lifecycle events (e.g., Created, Started, Scheduled)
-Status	Running, Pending, or Failed
+|Field	|Description|
+|-------|-----------|
+|Name	|Name of the Pod|
+|Namespace	|Logical grouping of resources|
+|Node	|Node hosting the Pod|
+|Containers	|Containers running in the Pod|
+|Events	|Lifecycle events (e.g., Created, Started, Scheduled)|
+|Status	|Running, Pending, or Failed|
 
 Example Output (Partial):
 
-yaml
+```yaml
 Copy code
 Name:           coredns-5dd5756b68-srdms
 Namespace:      kube-system
@@ -122,43 +123,45 @@ Events:
   Type    Reason     Age   From               Message
   ----    ------     ----  ----               -------
   Normal  Scheduled  24m   default-scheduler  Successfully assigned kube-system/coredns-5dd5756b68-srdms to minikube
-📸 Screenshot Required:
+```
 
-Capture kubectl describe pod output showing container image, node, and events.
 
-🔴 Step 3: Delete a Pod
-bash
-Copy code
+## 🔴 Step 3: Delete a Pod
+```bash
 kubectl delete pod <pod-name> -n kube-system
+```
+
 Example Command:
 
-bash
-Copy code
+```bash
 kubectl delete pod coredns-5dd5756b68-srdms -n kube-system
+```
+
 Expected Output:
 
-nginx
-Copy code
+```nginx
 pod "coredns-5dd5756b68-srdms" deleted
+```
+
 Verification Command:
 
-bash
-Copy code
+```bash
 kubectl get po -A
+```
+
 Expected Output (After Deletion):
 
-sql
-Copy code
+```sql
 NAMESPACE     NAME                             READY   STATUS    RESTARTS   AGE
 kube-system   coredns-5dd5756b68-nfx2r         1/1     Running   0          15s
+```
+
 Note: Kubernetes automatically recreates critical system Pods such as CoreDNS.
 
-📸 Screenshot Required:
+## 🧱 4. Containers in Kubernetes
 
-Show deleted Pod confirmation and the new Pod automatically created by Kubernetes.
-
-🧱 4. Containers in Kubernetes
 Definition and Purpose
+
 A Container is a lightweight, standalone package containing everything needed to run an application — code, runtime, and dependencies.
 
 In Kubernetes:
@@ -172,10 +175,11 @@ Multiple containers in a Pod can communicate via localhost.
 Analogy:
 If a Pod is an “apartment,” containers are the “rooms” inside — separate but sharing the same address and utilities.
 
-🧩 5. Defining Pods with Containers (YAML Example)
+## 🧩 5. Defining Pods with Containers (YAML Example)
+
 Here’s a simple Pod manifest defining one container inside a Pod:
 
-yaml
+```yaml
 Copy code
 apiVersion: v1
 kind: Pod
@@ -189,108 +193,104 @@ spec:
     image: nginx:latest
     ports:
     - containerPort: 80
+```
+
 Save as: nginx-pod.yaml
 
 Deploy the Pod:
 
-bash
-Copy code
+```bash
 kubectl apply -f nginx-pod.yaml
+```
+
 Verification:
 
-bash
-Copy code
+```bash
 kubectl get pods
+```
+
 Expected Output:
 
-sql
-Copy code
+```sql
 NAME         READY   STATUS    RESTARTS   AGE
 nginx-pod    1/1     Running   0          15s
-📸 Screenshot Required:
+```
 
-Show terminal output after creating the nginx-pod with status “Running”.
-
-🔍 Inspect Pod Logs
-bash
-Copy code
+## 🔍 Inspect Pod Logs
+```bash
 kubectl logs nginx-pod
+```
+
 Expected Output:
 
-swift
-Copy code
+``` swift
 127.0.0.1 - - [12/Oct/2025:15:22:00 +0000] "GET / HTTP/1.1" 200 612 "-" "curl/7.68.0"
-📸 Screenshot Required:
-
-Capture Pod logs to demonstrate container activity.
+```
 
 ❌ Delete the Pod
-bash
-Copy code
+
+```bash
 kubectl delete -f nginx-pod.yaml
+```
+
 Output:
 
-nginx
-Copy code
+```nginx
 pod "nginx-pod" deleted
-📸 Screenshot Required:
+```
 
-Capture Pod deletion confirmation message.
+##🧾 6. Deliverables Checklist
 
-🧾 6. Deliverables Checklist
-Deliverable	Description	Status	Evidence
-List Pods (kubectl get po -A)	Display all running Pods in cluster	✅	Screenshot 1
-Describe Pod (kubectl describe pod)	Show detailed Pod info and events	✅	Screenshot 2
-Delete Pod (kubectl delete pod)	Remove and verify recreation (if system pod)	✅	Screenshot 3
-Create Custom Pod (nginx-pod.yaml)	Deploy new Pod to Minikube	✅	Screenshot 4
-Verify Pod Logs	Display container activity	✅	Screenshot 5
-Delete Custom Pod	Clean up deployed Pod	✅	Screenshot 6
+|Deliverable	|Description	|Status	|Evidence|
+|List Pods (kubectl get po -A)	|Display all running Pods in cluster	|✅	|Screenshot 1|
+|Describe Pod (kubectl describe pod)	|Show detailed Pod info and events	|✅	|Screenshot 2|
+|Delete Pod (kubectl delete pod)	|Remove and verify recreation (if system pod)	|✅	|Screenshot 3|
+|Create Custom Pod (nginx-pod.yaml)	|Deploy new Pod to Minikube	|✅	|Screenshot 4|
+|Verify Pod Logs	|Display container activity	|✅	|Screenshot 5|
+|Delete Custom Pod	|Clean up deployed Pod	|✅	|Screenshot 6|
 
-🧰 7. Troubleshooting Guide
-Issue	Cause	Solution
-Pod stuck in Pending	Insufficient node resources	Increase Minikube CPU/memory using minikube config set
-kubectl command not found	CLI not installed	Install with sudo snap install kubectl --classic
-Pod not deleted	Pod part of system namespace	Ensure you target correct namespace using -n flag
-Container image pull error	Network issue or invalid tag	Check internet and image name (e.g., nginx:latest)
-Pod recreated automatically	System-managed Pod (CoreDNS, Kube-proxy)	Normal behavior; Kubernetes self-healing in action
+## 🧰 7. Troubleshooting Guide
 
-🧩 8. Summary of Key Learnings
-Pods are the core execution units of Kubernetes, encapsulating containers.
+|Issue	|Cause	|Solution|
+|Pod stuck in Pending	|Insufficient node resources	|Increase Minikube CPU/memory using minikube config set|
+|kubectl command not found	|CLI not installed	|Install with sudo snap install kubectl --classic|
+|Pod not deleted	|Pod part of system namespace	|Ensure you target correct namespace using -n flag|
+|Container image pull error	|Network issue or invalid tag	|Check internet and image name (e.g., nginx:latest)|
+|Pod recreated automatically	|System-managed Pod (CoreDNS, Kube-proxy)	|Normal behavior; Kubernetes self-healing in action|
 
-Every Pod can host one or more containers that share resources and context.
+## 🧩 8. Summary of Key Learnings
 
-Managing Pods involves listing, describing, and deleting using kubectl.
+- Pods are the core execution units of Kubernetes, encapsulating containers.
+- Every Pod can host one or more containers that share resources and context.
+- Managing Pods involves listing, describing, and deleting using kubectl.
+- YAML manifests define Pods declaratively for repeatable deployments.
+- Minikube provides an excellent local platform for testing Kubernetes deployments safely.
 
-YAML manifests define Pods declaratively for repeatable deployments.
-
-Minikube provides an excellent local platform for testing Kubernetes deployments safely.
-
-🧭 9. Reflection
+## 🧭 9. Reflection
 Working with Kubernetes Pods provided a foundational understanding of how containerized applications are deployed and managed in a cluster.
 I learned how Pods encapsulate containers, how to create and inspect them using YAML, and how Kubernetes maintains system Pods automatically.
 This hands-on experience built confidence in using kubectl and understanding orchestration concepts that scale into real production environments.
 
-📷 10. Evidence Summary
-Evidence Type	Description
-Screenshot 1	kubectl get po -A showing Pods in all namespaces
-Screenshot 2	kubectl describe pod output with container details
-Screenshot 3	Pod deletion output with recreation (if applicable)
-Screenshot 4	Creation of custom Pod (nginx-pod.yaml)
-Screenshot 5	Logs output from kubectl logs nginx-pod
-Screenshot 6	Deletion of custom Pod confirmation
+## 📷 10. Evidence Summary
 
-🧠 11. References
-Kubernetes Documentation — Pods
+|Evidence Type	|Description|
+|---------------|-----------|
+|Screenshot 1	|kubectl get po -A showing Pods in all namespaces|
+|Screenshot 2	|kubectl describe pod output with container details|
+|Screenshot 3	|Pod deletion output with recreation (if applicable)|
+|Screenshot 4	|Creation of custom Pod (nginx-pod.yaml)|
+|Screenshot 5	|Logs output from kubectl logs nginx-pod|
+|Screenshot 6	|Deletion of custom Pod confirmation|
 
-Minikube Official Guide
+## 🧠 11. References
 
-Kubectl Cheat Sheet
+- Kubernetes Documentation — Pods
+- Minikube Official Guide
+- Kubectl Cheat Sheet
+- YAML Configuration Guide
+- Docker and Container Basics
 
-YAML Configuration Guide
-
-Docker and Container Basics
-
-Author: [Your Full Name]
+## Author: Abraham Aigbokahn
 Project Title: Working with Kubernetes Pods
 Platform: Minikube + Kubectl
 Date: October 2025
