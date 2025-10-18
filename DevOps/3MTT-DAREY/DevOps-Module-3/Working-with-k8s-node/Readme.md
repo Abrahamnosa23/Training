@@ -1,221 +1,215 @@
-# 🚀 GitHub Actions CI/CD: Advanced Continuous Delivery Summary
+# 🧩 Working with Kubernetes Nodes
 
-## 🧭 Overview
+## 📘 Overview
 
-This project demonstrates the implementation of **advanced Continuous Delivery (CD)** practices using **GitHub Actions**, focusing on **automated versioning (Semantic Versioning - SemVer)** and **secure cloud deployment** to **AWS S3 and CloudFront**.  
-
-It forms the capstone component of the CI/CD curriculum, reinforcing core DevOps automation concepts while emphasizing **security**, **traceability**, and **cloud efficiency**.
-
----
-
-## 🎯 Objectives
-
-| Goal | Description | Achieved |
-|------|--------------|-----------|
-| **Automated Versioning** | Automatically assign SemVer tags (e.g., v1.0.0 → v1.0.1) on each push to `main`. | ✅ |
-| **Secure Cloud Deployment** | Deploy built artifacts to AWS S3 and invalidate CloudFront cache automatically. | ✅ |
-| **End-to-End CI/CD Automation** | Link CI (build/test) and CD (deploy) workflows seamlessly. | ✅ |
-| **Implement Strong Security** | Use encrypted GitHub Secrets instead of hardcoded credentials. | ✅ |
-| **Provide Verification Evidence** | Include logs, screenshots, and cloud validation outputs. | ✅ |
+This project introduces you to **Kubernetes Nodes**, the core worker components of a Kubernetes cluster, and demonstrates how to manage them using **Minikube**.  
+By the end of this project, you will understand how to **create, inspect, and maintain nodes**, as well as simulate real-world Kubernetes operations within a **local development environment**.
 
 ---
 
-## ⚙️ 1. Continuous Delivery (CD) Practices
+## 🎯 Learning Objectives
 
-### 🏷️ Automated Versioning and Tagging
+| Objective | Description | Status |
+|------------|--------------|---------|
+| Understand Kubernetes Node architecture | Learn what nodes are and their role in a cluster | ✅ |
+| Start, stop, and delete a Minikube cluster | Manage lifecycle of local Kubernetes clusters | ✅ |
+| View and inspect nodes | Retrieve and analyze node configuration and health | ✅ |
+| Understand node scaling and maintenance | Learn how node scaling and upgrades work conceptually | ✅ |
+| Demonstrate verification and troubleshooting | Practice command-line validation techniques | ✅ |
 
-**Goal:**  
-Automatically generate version tags following the **Semantic Versioning (SemVer)** standard.
+---
 
-**Implementation:**
+## ⚙️ 1. What is a Kubernetes Node?
 
-- The **`actions/github-tag-action@v1`** GitHub Action is used for version bumping.
-- Triggered on push to the `main` branch.
-- The workflow reads existing tags, increments the `PATCH` version (default), and creates a new annotated tag.
+A **Node** in Kubernetes is the **worker machine** (physical or virtual) that runs application **Pods** and manages **containers**.  
+Nodes collectively form the Kubernetes cluster’s computing layer.  
 
-**Workflow Snippet (`versioning.yml`):**
-```yaml
-name: Automated Versioning
+Each Node typically includes:
+- **Kubelet:** Communicates with the control plane and manages pods.
+- **Container runtime:** Runs containers (e.g., Docker or containerd).
+- **Kube-proxy:** Manages networking rules for pod communication.
 
-on:
-  push:
-    branches: [ main ]
+> 🧠 Think of each node as an employee in a company — responsible for executing assigned tasks (containers) efficiently and reporting back to management (the control plane).
 
-jobs:
-  tag:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+---
 
-      - name: Create Semantic Version Tag
-        uses: anothrnick/github-tag-action@v1.64.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          default_bump: patch
+## 🧰 2. Prerequisites
+
+Before starting, ensure that:
+- Minikube is installed → [Install Guide](https://minikube.sigs.k8s.io/docs/start/)
+- Kubectl is configured → Verify using `kubectl version`
+- Virtualization is enabled (e.g., VirtualBox, Docker, or Hyper-V backend)
+
+---
+
+## 🚀 3. Managing Nodes in Kubernetes
+
+Minikube provides a lightweight local Kubernetes cluster — ideal for **development, testing, and experimentation**.  
+The following steps guide you through **starting**, **stopping**, **deleting**, and **inspecting** your Minikube cluster.
+
+---
+
+### 🟢 Step 1: Start the Minikube Cluster
+
+```bash
+minikube start
 ```
 
+Explanation:
 
-✅ Expected Output:
+Provisions a single-node Kubernetes cluster.
 
-A new Git tag is automatically created after each main branch push.
+Starts a VM or container that hosts the control-plane and worker node.
 
-Example: v1.0.0 → v1.0.1
+Example Output:
 
-☁️ Secure Deployment to AWS
-
-Goal:
-Deliver built application files to AWS S3 for hosting and ensure immediate availability via CloudFront invalidation.
-
-Workflow Snippet (deploy.yml):
-
-name: Deploy to AWS (S3 + CloudFront)
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-
-      - name: Build and Sync to S3
-        run: |
-          npm ci
-          npm run build
-          aws s3 sync ./build s3://your-bucket-name --delete
-
-      - name: Invalidate CloudFront Cache
-        run: aws cloudfront create-invalidation \
-             --distribution-id YOUR_DISTRIBUTION_ID \
-             --paths "/*"
+Starting control plane node minikube in cluster minikube
+Creating virtualbox VM...
+Done! kubectl is now configured to use "minikube" cluster
 
 
-🔐 Security Requirements:
+Verification Command:
 
-All credentials (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY) are stored as Encrypted GitHub Secrets.
+kubectl get nodes
 
-IAM policy follows least privilege principle (only required S3 and CloudFront permissions).
 
-🧩 2. Project Flow Diagram (Textual Representation)
+Expected Output:
 
-Below is the full lifecycle of the project — from code push to deployment.
+NAME       STATUS   ROLES           AGE     VERSION
+minikube   Ready    control-plane   2m      v1.28.3
 
-Stage	Trigger / Action	Purpose / Description
-1. Code Commit	Developer pushes code to main.	Triggers workflow automation.
-2. Continuous Integration (CI)	a. Matrix Build (Node 14.x, 16.x) — runs tests across versions.
-b. Dependency Caching — reuses node modules.
-c. Code Quality Check — ESLint ensures code standards.	Ensures code stability and quality.
-3. Continuous Delivery (CD)	a. Automated Versioning — assigns SemVer tags.
-b. Secure Deployment to AWS — uses GitHub Secrets.
-c. CloudFront Invalidation — refreshes content globally.	Automates version control and deployment pipeline.
+🔴 Step 2: Stop the Cluster
+minikube stop
 
-✅ This design guarantees an end-to-end automated workflow — zero manual steps from commit to production.
 
-🔐 3. IAM Policy (Least Privilege Example)
+Explanation:
 
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "S3DeploymentAccess",
-      "Effect": "Allow",
-      "Action": [
-        "s3:ListBucket",
-        "s3:PutObject",
-        "s3:DeleteObject",
-        "s3:GetBucketLocation"
-      ],
-      "Resource": [
-        "arn:aws:s3:::your-bucket-name",
-        "arn:aws:s3:::your-bucket-name/*"
-      ]
-    },
-    {
-      "Sid": "CloudFrontInvalidate",
-      "Effect": "Allow",
-      "Action": [
-        "cloudfront:CreateInvalidation",
-        "cloudfront:GetInvalidation"
-      ],
-      "Resource": "*"
-    }
-  ]
-}
+Stops the running Minikube VM but preserves cluster state (data, images, configurations).
 
-```
+Useful for saving system resources.
 
-✅ 4. Verification and Deliverables
+Verification:
 
-Evidence	Command / Output	Description
-Git Tag Created	git tag --list	Displays latest semantic tag (e.g., v1.0.1).
-AWS S3 Deployment	aws s3 ls s3://your-bucket-name	Lists successfully uploaded build files.
-CloudFront Invalidation ID	AWS CLI response	Confirms cache refresh was triggered.
-GitHub Actions Logs	Workflow output	Shows “All jobs succeeded”.
-Public URL	https://your-cloudfront-url/
-	Displays deployed application live.
-Screenshots	evidence/ folder	Include build logs, AWS console, website view.
+minikube status
 
-📸 Attach screenshots of:
 
-Successful GitHub Actions runs
+Output should indicate that the cluster is stopped.
 
-AWS S3 bucket contents
+⚫ Step 3: Delete the Cluster
+minikube delete
 
-CloudFront invalidation output
 
-Live website in browser
+Explanation:
 
-🧠 5. Troubleshooting Guide
-Issue	Cause	Solution
-Workflow not triggering	Branch filter mismatch	Ensure workflow triggers main branch.
-Access denied (AWS)	IAM policy too restrictive	Confirm permissions: s3:PutObject, cloudfront:CreateInvalidation.
-Missing build directory	No build step in workflow	Add npm run build before deployment.
-YAML validation error	Indentation/syntax issue	Use YAML Lint
-.
-CloudFront not updating	Wrong distribution ID	Verify ID in AWS console.
-📦 6. Project Deliverables Checklist
+Permanently deletes all cluster resources (VMs, configurations, volumes).
+
+Use this command to reset your environment or reclaim storage.
+
+🔍 Step 4: View Nodes
+kubectl get nodes
+
+
+Purpose: Lists all active nodes in your cluster.
+
+Expected Output:
+
+NAME       STATUS   ROLES           AGE     VERSION
+minikube   Ready    control-plane   24m     v1.28.3
+
+🧾 Step 5: Inspect Node Details
+kubectl describe node <node-name>
+
+
+Example:
+
+kubectl describe node minikube
+
+
+Key Fields Explained:
+
+Field	Description
+Roles	Specifies the node’s purpose (e.g., control-plane, worker).
+Labels	Metadata used by Kubernetes for scheduling.
+Taints	Define node conditions for pod scheduling.
+Capacity	CPU and memory resources available.
+Allocatable	Resources available for pods after system overhead.
+
+Partial Output Example:
+
+Name:               minikube
+Roles:              control-plane
+Labels:             kubernetes.io/hostname=minikube
+Capacity:           cpu: 2, memory: 2Gi
+Allocatable:        cpu: 2, memory: 1.8Gi
+Taints:             <none>
+Unschedulable:      false
+
+⚖️ 4. Node Scaling and Maintenance
+
+Although Minikube runs a single-node cluster, understanding scaling concepts is critical for production Kubernetes environments.
+
+Node Scaling
+
+Horizontal scaling: Add or remove worker nodes to balance workload.
+
+In Minikube, this is simulated through resource allocation rather than actual node addition.
+
+Node Upgrade
+minikube update
+
+
+Upgrades your local cluster to a newer Kubernetes version, keeping your local development aligned with the production environment.
+
+🧪 5. Verification and Evidence
+Step	Command	Expected Output
+Start cluster	minikube start	Cluster starts successfully
+Check node status	kubectl get nodes	Node shows “Ready”
+Inspect node	kubectl describe node minikube	Detailed metadata displayed
+Stop cluster	minikube stop	Cluster stopped gracefully
+Delete cluster	minikube delete	Cluster resources removed
+
+📸 Screenshots to Include for Submission:
+
+kubectl get nodes showing node status = Ready
+
+kubectl describe node minikube with metadata and labels
+
+Terminal output of minikube start and minikube stop
+
+Optional: Minikube dashboard view (minikube dashboard)
+
+🧠 6. Troubleshooting Guide
+Issue	Possible Cause	Solution
+Minikube fails to start	Virtualization not enabled	Enable virtualization in BIOS or switch to Docker driver
+Node status = NotReady	Networking issue or kubelet failure	Restart with minikube stop && minikube start
+“kubectl command not found”	Kubectl not installed	Install via: sudo snap install kubectl --classic
+Slow startup	Limited system resources	Increase VM CPU/memory using minikube config
+Deletion error	Stuck VM process	Use minikube delete --all --purge
+🧩 7. Summary of Key Learnings
+
+Kubernetes Nodes are the backbone of any cluster, hosting and running workloads (Pods).
+
+Minikube allows you to simulate a full Kubernetes environment on your local machine.
+
+You can start, stop, delete, and inspect clusters easily with CLI commands.
+
+Understanding scaling and maintenance prepares you for real-world, production-level Kubernetes administration.
+
+🧾 8. Deliverables Checklist
 Deliverable	Description	Status
-versioning.yml	Automated SemVer workflow	✅
-deploy.yml	AWS deployment workflow	✅
-.eslintrc	Linter configuration file	✅
-package.json	Node.js build/test configuration	✅
-index.html	Sample webpage content	✅
-IAM Policy JSON	Least privilege permissions	✅
-Screenshots + URLs	Proof of deployment and success	✅
-🏁 7. Final Conclusion
+minikube start output	Shows cluster initialization success	✅
+kubectl get nodes screenshot	Lists nodes with “Ready” status	✅
+kubectl describe node screenshot	Displays node details	✅
+Summary reflection	Short write-up on learnings	✅
+Troubleshooting table	Documents potential issues and fixes	✅
+🧭 9. Reflection
 
-This project marks the completion of your Advanced Continuous Delivery journey with GitHub Actions.
-You’ve demonstrated practical mastery of:
-
-Jenkins & Docker — foundational CI/CD automation.
-
-GitHub Actions CI/CD — modular workflows with semantic tagging, caching, and linting.
-
-Secure AWS Deployment — using S3 and CloudFront with least-privilege IAM and encrypted GitHub Secrets.
-
-Through this hands-on implementation, you’ve achieved the ability to:
-
-Design and deploy enterprise-grade CI/CD pipelines.
-
-Automate build, test, versioning, and delivery.
-
-Maintain traceable, secure, and efficient DevOps workflows suitable for any production-grade environment.
-
-🧩 “Automation is not just a tool — it’s the bridge between consistency, quality, and scalability.”
+Working with Kubernetes nodes in Minikube helped me understand the foundational structure of container orchestration.
+I learned how nodes host workloads, manage system resources, and communicate within a cluster.
+This hands-on experience prepares me for scaling, debugging, and managing Kubernetes deployments in production environments.
 
 Author: Abraham Aigbokhan
-Course: GitHub Actions CI/CD — Advanced Continuous Delivery (Capstone)
+Project: Working with Kubernetes Nodes
+Platform: Minikube + Kubectl
 Date: October 2025
-Deployed Site: https://your-cloudfront-url/
-
-Evidence Folder: /evidence/
+Cluster Type: Single-node (local development)
