@@ -219,7 +219,7 @@ YAML Best Practices
 
 Container Network Interface (CNI)
 
-Author: [Your Full Name]
+Author: Abraham Aigbokhan
 Project Title: Networking in Kubernetes
 Platform: Minikube + Kubectl
 Date: October 2025
